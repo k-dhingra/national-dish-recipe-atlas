@@ -407,7 +407,31 @@
     const el = e.target.closest && e.target.closest("path[data-iso], circle.hit[data-iso]");
     if (!el) return null;
     if (el.classList.contains("other") || el.classList.contains("ws")) return null;
-    const iso = el.getAttribute("data-iso");
+    let iso = el.getAttribute("data-iso");
+    // Overlapping hit circles (Caribbean, Mediterranean) would otherwise
+    // give the topmost neighbour. Pick the centre closest to the pointer.
+    if (el.classList.contains("hit") && e.clientX != null) {
+      const svg = el.ownerSVGElement;
+      const ctm = svg && svg.getScreenCTM && svg.getScreenCTM();
+      if (ctm && typeof ctm.inverse === "function") {
+        const p = svg.createSVGPoint();
+        p.x = e.clientX;
+        p.y = e.clientY;
+        const loc = p.matrixTransform(ctm.inverse());
+        let best = iso, bestD = Infinity;
+        svg.querySelectorAll("circle.hit").forEach(function (c) {
+          const dx = loc.x - Number(c.getAttribute("cx"));
+          const dy = loc.y - Number(c.getAttribute("cy"));
+          const r = Number(c.getAttribute("r")) || 8;
+          const d = Math.hypot(dx, dy);
+          if (d <= r + 0.25 && d < bestD) {
+            bestD = d;
+            best = c.getAttribute("data-iso");
+          }
+        });
+        iso = best;
+      }
+    }
     return byIso[iso] ? iso : null;
   }
 
@@ -461,6 +485,11 @@
       if (btnIn) btnIn.disabled = z >= MAX_Z - 1e-6;
       if (btnOut) btnOut.disabled = z <= MIN_Z + 1e-6;
       wrap.classList.toggle("is-zoomed", z > 1.001);
+      // Keep hit circles about 8px on screen so they do not swallow neighbours when zoomed.
+      const hr = Math.max(1.1, 8 / z);
+      svg.querySelectorAll("circle.hit").forEach(function (c) {
+        c.setAttribute("r", String(hr));
+      });
     }
     function clientToSvg(clientX, clientY) {
       const r = svg.getBoundingClientRect();

@@ -2,43 +2,43 @@ window.STAPLE_META = [
   {
     "key": "rice",
     "label": "Rice",
-    "color": "#E2C56A"
+    "color": "#C8A35A"
   },
   {
     "key": "wheat",
     "label": "Wheat",
-    "color": "#D8874A"
+    "color": "#C47A3C"
   },
   {
     "key": "maize",
     "label": "Maize",
-    "color": "#6FAA5C"
+    "color": "#6E9260"
   },
   {
     "key": "roots",
     "label": "Roots and tubers",
-    "color": "#C07A9E"
+    "color": "#A05C7C"
   },
   {
     "key": "pulses",
     "label": "Pulses",
-    "color": "#3D8E82"
+    "color": "#1A656C"
   },
   {
     "key": "meat",
     "label": "Meat or fish led",
-    "color": "#C45B5E"
+    "color": "#C15A4A"
   },
   {
     "key": "mixed",
     "label": "Mixed or unclear",
-    "color": "#E6DFD4",
+    "color": "#D2CBC0",
     "hatched": true
   },
   {
     "key": "none",
     "label": "No listed dish",
-    "color": "#C9C3BA"
+    "color": "#DDD6CB"
   }
 ];
 window.RECIPE_DATA = [

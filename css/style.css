@@ -1,18 +1,40 @@
-/* National dishes — self-contained, no build, no webfonts. */
+/* National dishes — self-contained, no build. */
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../fonts/eb-garamond.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../fonts/eb-garamond-italic.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../fonts/cormorant-garamond.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
-  --paper: #F6F1E8;
-  --card: #FFFDF8;
-  --ink: #1A1410;
+  --paper: #F4EFE6;
+  --card: #F7F3EC;
+  --ink: #2A221C;
   --ink-soft: #3F372F;
   --muted: #5C5349;
-  --line: #C9BEB0;
-  --water: #C5D9EC;
-  --water-deep: #9EBFDA;
+  --line: #C5C0B6;
+  --water: #E4EAEE;
+  --water-deep: #D5DEE4;
   --accent: #7A3E1D;
-  --gap: #D9D4CC;
-  --shadow: 0 8px 24px rgba(26, 20, 16, 0.1);
+  --gap: #DDD6CB;
+  --shadow: none;
   --radius: 16px;
-  --font-serif: "Palatino Linotype", Palatino, "Book Antiqua", "Times New Roman", serif;
+  --font-serif: "EB Garamond", "Palatino Linotype", Palatino, "Times New Roman", serif;
+  --font-display: "Cormorant Garamond", "EB Garamond", Palatino, serif;
   --font-sans: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -29,8 +51,8 @@ body {
 header, main, footer { width: min(1200px, calc(100% - 32px)); margin-inline: auto; }
 header { padding: 20px 0 8px; }
 h1 {
-  font-family: var(--font-serif);
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-weight: 650;
   font-size: clamp(2rem, 5vw, 3.25rem);
   line-height: 1.1;
   margin: 0.2rem 0 0.6rem;
@@ -45,7 +67,8 @@ h1 {
   font-weight: 600;
 }
 .lead {
-  font-size: 1.05rem;
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
   max-width: 42rem;
   color: var(--ink-soft);
   margin: 0 0 0.75rem;
@@ -56,11 +79,11 @@ h1 {
 }
 #world-wrap {
   position: relative;
-  background: var(--water);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
+  background: var(--paper);
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,11 +113,11 @@ h1 {
   margin: 0;
   padding: 0 10px;
   border: 1px solid var(--line);
-  border-radius: 10px;
-  background: rgba(255, 253, 248, 0.95);
+  border-radius: 8px;
+  background: var(--paper);
   color: var(--ink);
   font: 600 1.35rem/1 var(--font-sans);
-  box-shadow: 0 1px 4px rgba(26, 20, 16, 0.12);
+  box-shadow: none;
   cursor: pointer;
 }
 #map-zoom button#zoom-reset {
@@ -105,39 +128,63 @@ h1 {
   opacity: 0.4;
   cursor: default;
 }
+@media (max-width: 720px) {
+  #world-wrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #world-wrap svg {
+    width: 100%;
+    max-height: none;
+  }
+  #map-zoom {
+    position: static;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 6px 0 0;
+    right: auto;
+    bottom: auto;
+  }
+}
+
 #map-zoom button:focus-visible {
   outline: 2px solid var(--ink);
   outline-offset: 2px;
 }
 #world-wrap path.c {
-  stroke: #8A939E;
-  stroke-width: 0.7px;
+  stroke: #F4EFE6;
+  stroke-width: 0.45px;
   stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
 }
 #world-wrap path.c.other {
-  fill: #EEEAE2;
+  fill: #E6DFD4;
   pointer-events: none;
 }
 #world-wrap path.c[data-staple="none"],
 #world-wrap path.c.gap {
-  fill: #C9C3BA;
+  fill: #DDD6CB;
   cursor: pointer;
 }
-#world-wrap path.c[data-staple="rice"] { fill: #E2C56A; cursor: pointer; }
-#world-wrap path.c[data-staple="wheat"] { fill: #D8874A; cursor: pointer; }
-#world-wrap path.c[data-staple="maize"] { fill: #6FAA5C; cursor: pointer; }
-#world-wrap path.c[data-staple="roots"] { fill: #C07A9E; cursor: pointer; }
-#world-wrap path.c[data-staple="pulses"] { fill: #3D8E82; cursor: pointer; }
-#world-wrap path.c[data-staple="meat"] { fill: #C45B5E; cursor: pointer; }
+#world-wrap path.c[data-staple="rice"] { fill: #C8A35A; cursor: pointer; }
+#world-wrap path.c[data-staple="wheat"] { fill: #C47A3C; cursor: pointer; }
+#world-wrap path.c[data-staple="maize"] { fill: #6E9260; cursor: pointer; }
+#world-wrap path.c[data-staple="roots"] { fill: #A05C7C; cursor: pointer; }
+#world-wrap path.c[data-staple="pulses"] { fill: #1A656C; cursor: pointer; }
+#world-wrap path.c[data-staple="meat"] { fill: #C15A4A; cursor: pointer; }
 #world-wrap path.c[data-staple="mixed"] { fill: url(#staple-hatch); cursor: pointer; }
 #world-wrap path.ws {
   fill: none !important;
-  stroke: #5E6A74;
-  stroke-width: 1px;
+  stroke: #C5C0B6;
+  stroke-width: 0.9px;
   stroke-dasharray: 3 2;
   pointer-events: none;
   vector-effect: non-scaling-stroke;
+}
+#world-wrap path.limb {
+  fill: none;
+  pointer-events: none;
 }
 #world-wrap circle.hit {
   fill: transparent;
@@ -186,14 +233,14 @@ h1 {
   align-items: center;
   gap: 8px;
   min-height: 44px;
-  padding: 8px 12px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--card);
+  padding: 4px 6px;
+  border: none;
+  border-radius: 0;
+  background: transparent;
   color: var(--ink);
-  font: inherit;
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 550;
   line-height: 1.15;
   cursor: pointer;
   text-align: left;
@@ -209,7 +256,7 @@ h1 {
 #map-popup .popup-staple .swatch.hatch {
   background-image: repeating-linear-gradient(
     -45deg,
-    #D4CCC0 0 1.5px,
+    #C4B8A8 0 1.5px,
     transparent 1.5px 5px
   );
 }
@@ -219,9 +266,10 @@ h1 {
   font-variant-numeric: tabular-nums;
 }
 #staple-legend button[aria-pressed="true"] {
-  outline: 3px solid var(--ink);
-  outline-offset: 1px;
-  background: #fff;
+  outline: 1.5px solid var(--ink);
+  outline-offset: 3px;
+  background: transparent;
+  font-weight: 650;
 }
 #staple-legend button:focus-visible {
   outline: 3px solid #5A86AB;
@@ -298,9 +346,12 @@ h1 {
 }
 
 .map-note {
-  font-size: 0.95rem;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
   color: var(--ink-soft);
-  margin: 0.55rem 0 1.15rem;
+  margin: 0.45rem 0 1rem;
+  background: none;
+  border: none;
 }
 
 .tools { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--paper) 92%, white); padding: 10px 0 8px; margin: 0 -8px; padding-left: 8px; padding-right: 8px; }
