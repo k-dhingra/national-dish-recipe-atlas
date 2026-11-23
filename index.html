@@ -12,8 +12,9 @@
   <header>
     <p class="kicker">30 Day Map Challenge, Day 23, Taste</p>
     <h1>National dishes, A to Z</h1>
-    <p class="lead">One card for every country, in alphabetical order. Open a card to read a reusable recipe when one exists, or a short description and a link to a recipe page. Dishes and recipes are not invented.</p>
-    <div id="world-wrap">
+    <p class="lead">Open a card for a sourced recipe or a short description. Dishes and recipes are not invented.</p>
+    <div id="world-hero">
+      <div id="world-wrap">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" id="world-map" role="img" aria-label="World map of countries with a listed national dish">
 <rect width="1200" height="640" fill="#C5D9EC"/>
 <path d="M695.4,474.5L690.3,473.2L689.4,473.4L688.4,472.6L688.5,471.5L685.3,470.3L684.4,467.8L684.6,465.0L683.3,464.9L683.1,463.0L680.0,460.1L679.5,457.1L677.4,452.0L677.6,451.3L679.9,452.2L680.9,452.0L682.3,452.6L683.1,452.2L686.2,446.8L689.0,445.0L689.6,442.2L692.3,440.4L694.4,440.4L694.4,442.2L697.0,442.4L699.1,444.4L702.3,445.9L702.0,454.2L700.9,457.1L701.3,458.0L701.0,459.4L701.5,462.4L699.7,465.8L699.1,468.2L699.3,469.0L695.4,474.5Z" fill="#F4F1EA" stroke="#6B6158" stroke-width="0.4" stroke-linejoin="round" data-iso="ZWE" class="c has"/>
@@ -259,8 +260,11 @@
 <path d="M570.2,219.3L570.6,219.3L570.4,227.4L560.1,227.4L559.7,239.9L557.9,240.9L556.1,243.1L556.4,250.5L543.9,250.6L543.6,253.2L543.8,250.1L550.9,249.7L551.4,247.9L552.7,245.7L553.9,238.8L555.8,237.4L556.9,234.9L558.7,233.2L560.0,227.5L561.1,226.9L562.3,224.3L562.2,223.1L564.1,222.4L565.7,223.2L567.0,223.2L568.3,222.1L570.2,221.9L570.2,219.3Z" fill="none" stroke="#6B6158" stroke-width="0.9" stroke-dasharray="3 2" class="ws"/>
 </svg>
 
+        <div id="map-popup" hidden></div>
+      </div>
+      <div id="staple-legend" role="toolbar" aria-label="Filter by staple"></div>
     </div>
-    <p class="map-note">The map is Equal Earth, with blue water, from Natural Earth. Click a country to open its card. Western Sahara is drawn with a dashed line and is not filled with Morocco's dish.</p>
+    <p class="map-note">Coloured by what each national dish is built on. Tap a country.</p>
     <div class="tools">
       <label class="visually-hidden" for="search" style="position:absolute;left:-999px">Search countries or dishes</label>
       <input type="search" id="search" placeholder="Search countries or dishes" autocomplete="off">

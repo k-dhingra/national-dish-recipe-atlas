@@ -1,3 +1,40 @@
+window.STAPLE_META = [
+  {
+    "key": "rice",
+    "label": "Rice",
+    "color": "#E8B923"
+  },
+  {
+    "key": "wheat",
+    "label": "Wheat",
+    "color": "#E05A00"
+  },
+  {
+    "key": "maize",
+    "label": "Maize",
+    "color": "#2A9D4A"
+  },
+  {
+    "key": "roots",
+    "label": "Roots and tubers",
+    "color": "#C2368C"
+  },
+  {
+    "key": "pulses",
+    "label": "Pulses",
+    "color": "#0A7F86"
+  },
+  {
+    "key": "meat",
+    "label": "Meat or fish led",
+    "color": "#C8102E"
+  },
+  {
+    "key": "mixed",
+    "label": "Mixed or unclear",
+    "color": "#4F62C4"
+  }
+];
 window.RECIPE_DATA = [
   {
     "iso3": "AFG",
@@ -15,7 +52,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kabuli_pulao",
     "description": "Kabuli pulao (or pulaw) is a variety of pilaf made in Afghanistan and Uzbekistan. It is known in Afghanistan as Qābilī palaw, and in Uzbekistan as the Osh palov, with neither country referring to it by the name of a city. In English speaking countries, the dish tends to be known by the name Kabuli pulao, after the city of Kabul. In Saudi Arabia, it is known by the name Bukhari rice, after the city of Bukhara.\nThe core ingredients are steamed rice mixed with caramelized carrots and raisins as well as marinated meat. Kabuli pulao is commonly garnished with almonds and pistachios. Saffron may be added to either the rice, the sauce or the garnishes. Varieties of Kabuli pulao have spread from Afghanistan to different parts of Western and Central Asia and Pakistan.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Kabuli_pulao",
-    "image": "images/dishes/AFG.jpg"
+    "image": "images/dishes/AFG.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "ALB",
@@ -33,7 +72,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tav%C3%AB_kosi",
     "description": "Tavë kosi (\"yogurt casserole\"), also known as Tavë Elbasani, is a traditional Albanian baked dish consisting of mutton and rice covered with a mixture of yogurt, eggs, butter and flour before being baked in the oven. Chicken may be used as an alternative to mutton, in which case the dish is known as \"tavë kosi me mish pule\". It is commonly seasoned with ingredients such as salt, black pepper, garlic and oregano.\nThought to originate from the city of Elbasan, tavë kosi is regarded as one of the national dishes of Albania. The dish is also popular in neighboring countries, including Greece, Kosovo, North Macedonia and Turkey, where it is commonly known as \"Elbasan tava\", a name derived from its place of origin.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Tav%C3%AB_kosi",
-    "image": "images/dishes/ALB.jpg"
+    "image": "images/dishes/ALB.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "DZA",
@@ -92,7 +133,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Couscous",
     "description": "Couscous is a traditional North African dish of small steamed granules of rolled semolina that is often served with a stew spooned on top. Pearl millet, sorghum, bulgur, and other cereals are often cooked in much the same way in West Africa, and the resulting dishes are also sometimes called couscous.\nCouscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya. It was integrated into French and European cuisine at the beginning of the twentieth century, through the French colonial empire and the Pieds-Noirs of Algeria.\nIn 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Couscous",
-    "image": "images/dishes/DZA.jpg"
+    "image": "images/dishes/DZA.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "AND",
@@ -110,7 +153,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Escudella",
     "description": "Escudella i carn d'olla, or shorter escudella (Eastern Catalan: [əskuˈðeʎə]; lit. 'bowl'), is a traditional Catalan and Valencian soup made with meat and vegetables. Francesc Eiximenis wrote in the 14th century that it was eaten every day by Catalan people.\nIt is characterized by the use of a pilota, a very big meatball spiced with garlic and parsley; it also contains vegetables as celery, cabbage, carrots, etc. depending on the season. Additionally, bones, sausages called botifarra, and other types of meat, can be used.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Escudella",
-    "image": "images/dishes/AND.jpg"
+    "image": "images/dishes/AND.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "AGO",
@@ -128,7 +173,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Moambe_chicken",
     "description": "Moambe chicken (French: poulet à la moambe or simply poulet moambe, Portuguese: moamba de galinha) is a savory chicken dish popular in Central Africa and considered the national dish of Angola, the Republic of the Congo, and the Democratic Republic of the Congo. The dish itself is made by combining chicken, spices and palm butter to create a stew-like consistency. A number of local or regional variations exist across the Congo and Central Africa; the dish is also known outside the continent.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Moambe_chicken",
-    "image": "images/dishes/AGO.jpg"
+    "image": "images/dishes/AGO.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "ATG",
@@ -146,7 +193,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda_cuisine",
     "description": "Antigua and Barbuda cuisine refers to the cuisines of the Caribbean islands Antigua and Barbuda. The national dish is fungee and pepperpot. Fungee is a dish similar to Italian polenta, made mostly with cornmeal. Other local dishes include ducana, seasoned rice, saltfish and lobster (from Barbuda). There are also local confectioneries which include sugar cake, fudge, raspberry and tamarind stew, and peanut brittle. These foods are indigenous to Antigua and Barbuda and to some other Caribbean countries, the local diet has diversified and includes local dishes of Jamaica, such as jerk meats, or Trinidad, such as roti, and specialties of other Caribbean countries.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Antigua_and_Barbuda_cuisine",
-    "image": "images/dishes/ATG.jpg"
+    "image": "images/dishes/ATG.jpg",
+    "staple": "Maize",
+    "staple_key": "maize"
   },
   {
     "iso3": "ARG",
@@ -164,7 +213,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Asado",
     "description": "Asado (Spanish: [aˈsaðo]) is the technique and the social event of having or attending a barbecue in various South American countries: especially Argentina and Uruguay where it is also a traditional event, as well as Brazil (Rio Grande do Sul), Chile and Paraguay. An asado usually consists of beef, pork, chicken, chorizo, and morcilla, all of which are cooked using an open fire or a grill, called a parrilla. Usually, red wine and side dishes such as salads accompany the main meats, which are prepared by a designated cook called the asador or parrillero.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Asado",
-    "image": "images/dishes/ARG.jpg"
+    "image": "images/dishes/ARG.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "ARM",
@@ -182,7 +233,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Khorovats",
     "description": "Khorovats (Armenian: խորոված, [χɔɾɔˈvɑt͡s]) is an Armenian grilled meat dish. The meat may be marinated before grilling, but it does not have to be. It can be made with lamb, pork, beef, chicken, fish, or even veal. This is generally a dish reserved for \"festive occasions\".",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Khorovats",
-    "image": "images/dishes/ARM.jpg"
+    "image": "images/dishes/ARM.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "AUS",
@@ -236,7 +289,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sunday_roast",
     "description": "A Sunday roast or roast dinner is a British dish traditionally eaten on Sunday. It consists of roast meat, roast or mashed potatoes, and accompaniments such as Yorkshire pudding, gravy and stuffing, and may include condiments such as apple sauce, mint sauce, redcurrant sauce, mustard, cranberry sauce or horseradish sauce. A range of vegetables can be served, such as broccoli, Brussels sprouts, cabbage, carrots, cauliflower, parsnips or peas, which can be boiled, steamed or roasted alongside the meat and potatoes. Other names for this meal include Sunday lunch, Sunday dinner, roast dinner and full roast. The meal is often described as a less grand version of a traditional Christmas dinner.\nBesides being served in its original homeland, the tradition of a Sunday roast lunch or dinner has been a major influence on food cultures in the English-speaking world, particularly in Australia, Ireland, Canada, South Africa, and New Zealand. A South African Sunday roast normally comprises roast pork, beef, lamb or chicken, roast potatoes or mashed potato, and various vegetables such as cauliflower cheese, creamed spinach, green beans, carrots, peas, beetroot and sweet potato. It is also fairly common to serve rice and gravy or pap and tomato gravy in South Africa instead of Yorkshire pudding.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Sunday_roast",
-    "image": "images/dishes/AUS.jpg"
+    "image": "images/dishes/AUS.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "AUT",
@@ -254,7 +309,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Wiener_schnitzel",
     "description": "Wiener schnitzel (VEE-nər SHNIT-səl; German: Wiener Schnitzel [ˈviːnɐ ˈʃnɪtsl̩], lit. \"Viennese cutlet\"), sometimes spelled Wienerschnitzel, is a type of schnitzel made of a thin, breaded, pan-fried veal cutlet.\nIt is one of the best known specialities of Viennese cuisine, and one of the national dishes of Austria.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Wiener_schnitzel",
-    "image": "images/dishes/AUT.jpg"
+    "image": "images/dishes/AUT.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "AZE",
@@ -313,7 +370,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dolma",
     "description": "Dolma (literally: \"stuffed\" in Turkish) is a family of stuffed dishes largely associated with Ottoman cuisine. It mainly includes vegetables and leaves, and occasionally seafood, offal, fruits, and meats, that are hollowed out or wrapped, then filled with a mixture of rice, minced meat, herbs, and spices. The leaf-wrapped type can be specifically known as sarma, but colloquially dolma is used for both.\nDolma has spread during the Ottoman Empire, becoming a staple food across the modern cuisines of post-Ottoman regions and nations.\nIn 2017, the dolma-making tradition of Azerbaijan was inscribed on the UNESCO Intangible Cultural Heritage Lists. Armenia officially recognizes the preparation and consumption of tolma on its own intangible cultural heritage list.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Dolma",
-    "image": "images/dishes/AZE.jpg"
+    "image": "images/dishes/AZE.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "BHS",
@@ -331,7 +390,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bahamian_cuisine",
     "description": "Bahamian cuisine refers to the foods and beverages of the Bahamas. It includes seafood such as fish, shellfish, lobster, crab, and conch, as well as tropical fruits, rice, peas, pigeon peas, and pork. Popular seasonings commonly used in dishes include chillies (hot pepper), lime, tomatoes, onions, garlic, allspice, ginger, cinnamon, rum, and coconut. Rum-based beverages are popular on the islands. Since the Bahamas consist of a multitude of islands, notable culinary variations exist.\nBahamian cuisine is somewhat related to that of the American South, with dishes held in common such as \"fish 'n' grits\". A large portion of Bahamian foodstuffs are imported (cf. economy of the Bahamas). International cuisine is offered, especially at hotels.\nMany specialty dishes are available at roadside stands, beachside, and in fine-dining establishments. In contrast to the offerings in the city of Nassau and the many hotels, \"shack\"-type food stands and restaurants (including Goldies and Twin Brothers) are located at Arawak Cay on West Bay Street about 15 minutes from downtown Nassau and 25 minutes from Atlantis Paradise Island resort. Travellers Rest Restaurant, in Nassau, is known for serving authentic \"local\" foods.\nBahamian cuisine is showcased at many large festivals, including Independence Day on July 10 (during which inhabitants prepare special dishes like guava duff), Fox Hill Day (second Tuesday in August), and Emancipation Day. Some settlements have festivals associated with the traditional crop or food of that area, such as the Pineapple Fest in Gregory Town, Eleuthera.\nBahamian traditions and food have been exported to other countries with emigrants. Coconut Grove, Florida holds the Goombay Festival in June featuring Bahamian culture, food and music. Fantasy Fest in Key West, Florida includes a two-day street party known as Goombay held in Key West's Bahama Village neighborhood that features Bahamian food and other culture.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Bahamian_cuisine",
-    "image": "images/dishes/BHS.jpg"
+    "image": "images/dishes/BHS.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "BHR",
@@ -349,7 +410,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kabsa",
     "description": "Kabsa (Arabic: كبسة, romanized: kabsah), also known as Makboos (Gulf Arabic: مكبوس) or Machboos (Gulf Arabic: مچبوس [mətʃˈbuːs]), is an Arab mixed rice dish that originates from Saudi Arabia or Yemen. It is commonly regarded as a national dish in all the countries of the Gulf Cooperation Council. It can also be found in regions such as southern Iran and Gaza in Palestine.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Kabsa",
-    "image": "images/dishes/BHR.jpg"
+    "image": "images/dishes/BHR.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "BGD",
@@ -367,7 +430,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ilish",
     "description": "The ilish (Tenualosa ilisha) (Bengali: ইলিশ, romanized: iliś), also known as the ilishi, hilsa, pulasa, hilsa herring or hilsa shad, is a species of fish related to the herring, in the family Clupeidae. It is a very popular and sought-after food in the Bengal region and area and is the national fish of Bangladesh. It is also the state fish of the Indian state of West Bengal.\nAs of 2023, 97% of the world's total ilish supply originates in Bangladesh. The fish contributes about 12% of the total fish production and about 1.15% of GDP of the country. On 6 August 2017, the Department of Patents, Designs and Trademarks under the Ministry of Industries in Bangladesh declared ilish as a Geographical Indication of Bangladesh. About 450,000 people are directly involved in the catching of the fish as a large part of their livelihood; around four to five million people are indirectly involved with the trade.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Ilish",
-    "image": "images/dishes/BGD.jpg"
+    "image": "images/dishes/BGD.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "BRB",
@@ -385,7 +450,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cou-cou",
     "description": "Cou-cou, coo-coo (as it is known in the Windward Islands), or fungee (as it is known in the Leeward Islands and Dominica), makes up part of the national dishes of Antigua and Barbuda, Barbados, British Virgin Islands and the U.S. Virgin Islands. It consists mainly of cornmeal (corn flour) and okra (ochroes). Cornmeal, which comes readily packaged and is available at supermarkets islandwide, and okra, which can be found at supermarkets, vegetable markets and home gardens, are very inexpensive ingredients. Because these main components are inexpensive, the dish became common for many residents in Barbados' early colonial history. In Angola, a similar meal is made with yellow or white cornmeal and called 'funge' and in Ghana, a similar meal of fermented corn or maize flour eaten with okra stew and fish is known as banku, a favourite dish of the Ga tribe in Accra.\nA cooking utensil called a 'cou-cou stick', or 'fungee stick', is a type of spurtle used in its preparation. A cou-cou stick is made of wood, and has a long, flat rectangular shape like a 1-foot-long (30 cm) miniature cricket bat. It is believed by Barbadians to be essential in stirring the cou-cou, as the dish takes on a firm texture and the cou-cou stick makes it easier to stir in a large pot.\nFlying fish prepared fried or steamed is a usual complement to cou-cou. Cou-cou and flying fish is Barbados' national dish. Traditionally, cou-cou is served on Fridays at homes across Barbados and local food establishments. Cou-cou can also be prepared using breadfruit instead of cornmeal.\nIn Trinidad and Tobago, cou-cou (or coo-coo) is often prepared alongside callaloo and either stewed or fried fish.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Cou-cou",
-    "image": "images/dishes/BRB.jpg"
+    "image": "images/dishes/BRB.jpg",
+    "staple": "Maize",
+    "staple_key": "maize"
   },
   {
     "iso3": "BLR",
@@ -403,7 +470,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Potato_pancake",
     "description": "Potato pancakes are shallow-fried pancakes consisting of grated or ground potato, matzo meal or flour and typically a binding ingredient such as egg or corn starch, often flavored with grated garlic or onion and seasonings. They may be topped with a variety of condiments, ranging from the savory (such as sour cream or cottage cheese), to the sweet (such as apple sauce or sugar), or they may be served plain. The dish is sometimes made from mashed potatoes to make pancake-shaped croquettes. Some variations are made with sweet potatoes.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Potato_pancake",
-    "image": "images/dishes/BLR.jpg"
+    "image": "images/dishes/BLR.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "BEL",
@@ -421,7 +490,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Belgian_cuisine",
     "description": "Belgian cuisine is widely varied among regions, while also reflecting the cuisines of neighbouring France, Germany and the Netherlands. It is characterised by the combination of French cuisine with the more hearty Flemish fare. Outside the country, Belgium is best known for its chocolate, waffles, fries and beer.\nAlthough Belgium has many distinctive national dishes, many popular international foods such as hamburgers and spaghetti bolognese are also widely enjoyed in Belgium, and most of what Belgians eat is also consumed in neighbouring countries. \"Belgian cuisine\" therefore usually refers to dishes of Belgian origin, or those considered typically Belgian.\nBelgian cuisine traditionally prizes regional and seasonal ingredients. Typical ingredients in Belgian dishes include potatoes, leeks, grey shrimp, white asparagus, Belgian endive, horse meat and local beer, in addition to common European staples including meat, cheese and butter.\nBelgium has a plethora of local dishes and products. Examples include waterzooi from Ghent, couque biscuit from Dinant, and tarte au riz from Verviers. While their local origins are acknowledged, most such dishes are enjoyed throughout Belgium.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Belgian_cuisine",
-    "image": "images/dishes/BEL.jpg"
+    "image": "images/dishes/BEL.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "BLZ",
@@ -461,7 +532,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Rice_and_beans",
     "description": "Rice and beans, or beans and rice, is a category of dishes from many cultures around the world where the staple foods of rice and beans are combined in some manner. The grain and legume combination provides several important nutrients and many calories, and both foods are widely available. The beans are usually seasoned, while the rice may be plain or seasoned. If the beans do not top the rice, the two components may be mixed together, separated on the plate, or served separately.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Rice_and_beans', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/BLZ.jpg"
+    "image": "images/dishes/BLZ.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "BEN",
@@ -498,7 +571,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kuli-kuli",
     "description": "Kuli-kuli is a Nigerian snack primarily made from peanuts, first made by the Nupe people of Nigeria. It is a popular snack in Nigeria, Benin, northern Cameroon and Ghana. Today kuli-kuli is accepted across the globe. It is often eaten alone or with a mixture of garri also known as cassava flakes, sugar and water, popularly called \"garri soakings\". It is also eaten with Hausa koko, fura, and akamu, and is sometimes ground and put into salad. It is often ground and used as an ingredient for suya and kilishi.\nKuli-kuli is a byproduct of processing raw peanuts into peanut oil.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Kuli-kuli', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/BEN.jpg"
+    "image": "images/dishes/BEN.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "BTN",
@@ -516,7 +591,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ema_datshi",
     "description": "Ema datshi (Dzongkha: ཨེ་མ་དར་ཚིལ་; Wylie: e-ma dar-tshil) is a spicy Bhutanese stew made from hot chili peppers and cheese. It is among the most famous dishes in Bhutanese cuisine, recognized as the national dish of the country. Over the years, ema datshi, which has its roots in Tibetan culinary traditions, has undergone various changes to suit the preference of local Bhutanese taste.\nDifferent varieties of chilies may be used: green chili, red chili, or white chili (green chili washed in hot water and sun-dried), which may be dried or fresh. The chilies are called \"sha ema\" which is a Capsicum annuum cultivar, a form of pepper much like cayenne, poblano, ancho, or Anaheim. Beyond the classic ema datshi, numerous variations exist, depending on the type of vegetable used.\nThe cheese used in ema datshi is called datshi; it is usually made at home from the curd of cow's or yak's milk. While rich in flavor, ema datshi is high in fats and sodium, making it less suitable for individuals with certain health conditions.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Ema_datshi",
-    "image": "images/dishes/BTN.jpg"
+    "image": "images/dishes/BTN.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "BOL",
@@ -534,7 +611,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Salte%C3%B1a",
     "description": "A salteña is a Bolivian type of baked empanada, a type of turnover. Salteñas are savory pastries filled with beef, pork or chicken mixed in a sweet, slightly spicy sauce containing ají, potatoes and sometimes egg. Vegetarian salteñas are sometimes available at certain restaurants. Salteñas are filled with a juicy gelatin-based stew that is solid when prepared, but melts when they are baked; the pastry is hard and sweet, not like other empanadas.\nTypically salteñas can be found in any town or city throughout the country, but each area has its variations; Cochabamba and Sucre claim to have the best version of this snack, and many will go out of their way to try the variation from Potosí. In La Paz and Santa Cruz de la Sierra, it is a tradition to enjoy salteñas as a mid-morning snack especially on Sundays, although vendors often start selling salteñas very early in the morning. The pastries are sold anywhere from 7 am to noon; most vendors sell out by mid-morning.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Salte%C3%B1a",
-    "image": "images/dishes/BOL.jpg"
+    "image": "images/dishes/BOL.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "BIH",
@@ -552,7 +631,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bosnian_pot",
     "description": "Bosnian pot (Bosanski lonac) is a Bosnian stew, a culinary speciality, appreciated for its rich taste and flexibility. Recipes for Bosanski lonac vary greatly according to personal and regional preference, but the main ingredients generally include chunked meat and vegetables. Mixed meats may be used in the dish. It has been described as a national dish of Bosnia and Herzegovina.\nBosanski lonac has been on the tables of both the rich and the poor for hundreds of years. The wealthy prepared the dish with more meat and other expensive ingredients, while the poor used what was available. Typical ingredients are beef, lamb, cabbage, potatoes, tomatoes, carrots, parsley, garlic, and peppercorns (whole, not ground). Many different vegetables or meats may be used. Bosanski lonac is prepared by layering meat and vegetables (alternating layers of meat and vegetables until the pot is full) into a deep pot, then adding 1-2 dl water. The ingredients are usually cut into large pieces rather than finely chopped or minced.\nOriginally, Bosanski lonac was made in ceramic pots and cooked in a fireplace or pit in the ground. Today, with the declining availability of fireplaces for cooking, many cooks use a regular pot and a kitchen stove.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Bosnian_pot",
-    "image": "images/dishes/BIH.jpg"
+    "image": "images/dishes/BIH.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "BWA",
@@ -570,7 +651,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Seswaa",
     "description": "Seswaa (as the dish is called in the north of Botswana) or loswao (as the dish is called in the south of the country and western South Africa) is a traditional meat dish of Botswana, made of beef or goat meat. It is prepared using cuts or tough cuts such as legs, neck and back. Sometimes, the whole animal is used. The dish is normally prepared for ceremonies such as funerals, weddings and national events such as independence celebrations. The meat is boiled until tender in a pot, with \"just enough salt\", and pounded. It is often served with pap (maize meal), setampa (samp, ground corn) or mabele (sorghum).\nSeswaa is a dish cooked with beef at sufficient heat until it is cooked, and then it is cut and salted to be eaten with porridge. It is a respected Batswana food especially at ceremonies such as funerals and weddings. Seswaa meat can usually be cooked using goat, sheep, chicken, or beef. Cooking meat is easy, but cutting it is a challenge. Cooking instructions state that it must be hard wood so that it looks like it has been crushed with small pieces.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Seswaa",
-    "image": "images/dishes/BWA.jpg"
+    "image": "images/dishes/BWA.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "BRA",
@@ -613,7 +696,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Feijoada",
     "description": "Feijoada (European Portuguese: [fɐjˈʒwaðɐ], Brazilian Portuguese: [fejʒuˈadɐ]; from feijão, 'bean') is the name for varieties of bean stew with beef or pork prepared in the Portuguese-speaking world.\nFeijoada is a common name given to dishes from Portuguese-speaking countries such as Portugal, Brazil, Angola, East Timor, Mozambique, and Macau, where it is made from a mixture of meat and white, black, or red beans, usually accompanied by rice.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Feijoada', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/BRA.jpg"
+    "image": "images/dishes/BRA.jpg",
+    "staple": "Pulses",
+    "staple_key": "pulses"
   },
   {
     "iso3": "BRN",
@@ -631,7 +716,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ambuyat",
     "description": "Ambuyat is a dish derived from the interior trunk of the sago palm. It is a starchy, bland substance similar to tapioca. Ambuyat is the national dish of Brunei, and it is also popular in the Malaysian states of Sarawak and Sabah as well as the federal territory of Labuan, where it is sometimes known as linut or pinantung.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Ambuyat",
-    "image": "images/dishes/BRN.jpg"
+    "image": "images/dishes/BRN.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "BGR",
@@ -662,7 +749,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Shopska_salad",
     "description": "Shopska salad is a cold salad popular throughout Southeastern Europe. It is Bulgaria's most famous salad and national dish.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Shopska_salad', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/BGR.jpg"
+    "image": "images/dishes/BGR.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "BFA",
@@ -708,7 +797,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Riz_gras",
     "description": "Riz gras or riz au gras is a rice-based dish in Beninese, Burkinabé, Guinean, Ivorian, and Togolese cuisines, in West Africa. It is also prepared in other African countries, such as Senegal, where it is called tiebou djen and is prepared with significant amounts of fish and meat. This dish can be considered a variation of what is known as jollof rice in English-speaking West Africa.\nRiz gras is often served at parties in urban areas of Burkina Faso. Riz gras is prepared with significant amounts of meat and vegetables, and is usually served with the meat and chunks of vegetables presented atop the rice. Additional ingredients used include tomatoes, eggplant, bell peppers, carrots, cabbage, onion, garlic, meat or vegetable stock, oil and salt.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Riz_gras', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/BFA.jpg"
+    "image": "images/dishes/BFA.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "BDI",
@@ -726,7 +817,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
     "description": null,
     "description_attribution": null,
-    "image": "images/dishes/BDI.jpg"
+    "image": "images/dishes/BDI.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "KHM",
@@ -744,7 +837,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fish_amok",
     "description": "Fish amok or amok trey (Khmer: អាម៉ុកត្រី [ʔaːmok trəj]) is a Khmer steamed fish curry (amok) with a mousse-like consistency, considered one of Cambodia's national dishes. Fish amok is believed to have been a royal Khmer dish dating back to the Khmer Empire, although some question it originating in Cambodia.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Fish_amok",
-    "image": "images/dishes/KHM.jpg"
+    "image": "images/dishes/KHM.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "CMR",
@@ -784,7 +879,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ndol%C3%A9",
     "description": "Ndolé, also written Ndole or Ndolè, is a Cameroonian dish consisting of stewed ground peanuts, crayfish, garlic, onions, and ndoleh leaves (indigenous to West and Central Africa). The dish originated in Douala, in the Littoral Region of Cameroon. Ndolé is widely regarded as the national dish of Cameroon.\nNdolé is typically cooked with fish or beef, and in some variations, may contain shrimp, in which case the dish is described as \"regal\". The dish is traditionally accompanied by fried or boiled plantains, as well as bobolo or miondo, which are Cameroonian delicacies made of fermented ground manioc steamed in Marantaceae leaves and commonly formed into spiral shapes before serving.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Ndol%C3%A9', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/CMR.jpg"
+    "image": "images/dishes/CMR.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "CAN",
@@ -816,7 +913,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Poutine",
     "description": "Poutine is a dish of French fries and cheese curds topped with a hot brown beef and chicken stock gravy. It emerged in the Centre-du-Québec region of Quebec in 1959, though its exact origins are uncertain, and there are several competing claims regarding its origin. For many years, it was used by some to mock Quebec society. Poutine later became celebrated as a symbol of Québécois culture and the province of Quebec. It has long been associated with Quebec cuisine, and its rise in prominence has led to its growing popularity throughout the rest of Canada.\nAnnual poutine celebrations occur in Montreal, Quebec City, and Drummondville, as well as Toronto, Ottawa, New Hampshire, and Chicago. It has been called Canada's national dish, though some critics believe this labeling represents cultural appropriation of the Québécois or Quebec national identity. Many variations on the original recipe are popular, leading some to suggest that poutine has emerged as a new dish classification in its own right, as with sandwiches or dumplings.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Poutine', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/CAN.jpg"
+    "image": "images/dishes/CAN.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "CPV",
@@ -869,7 +968,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cachupa",
     "description": "Cachupa (Portuguese pronunciation: [kɐˈʃupɐ], Kabuverdianu: Katxupa [kɐˈtʃupɐ]) is a dish from the Cape Verde islands, West Africa. It is a slow-cooked stew of corn (hominy), beans, fish or meat (sausage, pork, beef, goat or chicken), and often morcela (blood sausage). Referred to as the country's national dish, each island has its own regional variation. The version of the recipe called cachupa rica tends to have more ingredients than the simpler cachupa pobre.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Cachupa', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/CPV.jpg"
+    "image": "images/dishes/CPV.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "CAF",
@@ -887,7 +988,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cassava",
     "description": "Manihot esculenta, commonly called cassava, manioc, or yuca (among numerous regional names), is a woody shrub of the spurge family, Euphorbiaceae, native to South America, from Brazil, Paraguay and parts of the Andes. Although a perennial plant, cassava is extensively cultivated in tropical and subtropical regions as an annual crop for its edible starchy tuberous root. Cassava is predominantly consumed in boiled form, but substantial quantities are processed to extract cassava starch, called tapioca, which is used for food, animal feed, and industrial purposes. The Brazilian farofa, and the related garri of West Africa, is an edible coarse flour obtained by grating cassava roots, pressing moisture off the obtained grated pulp, and finally drying and roasting it.\nCassava is the third-largest source of carbohydrates in food in the tropics, after rice and maize, making it an important staple; more than 500 million people depend on it. It offers the advantage of being exceptionally drought-tolerant and able to grow productively on poor soil. The largest producer is Nigeria, while Thailand is the largest exporter of cassava starch.\nCassava is grown in sweet and bitter varieties; both contain toxins, but the bitter varieties have them in much larger amounts. Cassava has to be prepared carefully for consumption, as improperly prepared material can contain sufficient cyanide to cause poisoning. The more toxic varieties of cassava have been used in some places as famine food during times of food insecurity. Farmers may also choose bitter cultivars to minimise crop losses.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Cassava",
-    "image": "images/dishes/CAF.jpg"
+    "image": "images/dishes/CAF.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "TCD",
@@ -921,7 +1024,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chadian_cuisine",
     "description": "Chadian cuisine is the cooking traditions, practices, foods and dishes associated with the Republic of Chad. Chadians use a medium variety of grains, vegetables, fruits and meats. Commonly consumed grains include millet, sorghum, and rice as staple foods. Commonly eaten vegetables include okra and cassava. A variety of fruits are also eaten. Meats include mutton, chicken, pork, goat, fish, lamb and beef. The day's main meal is typically consumed in the evening on a large communal plate, with men and women usually eating in separate areas. This meal is typically served on the ground upon a mat, with people sitting and eating around it.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Chadian_cuisine', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/TCD.jpg"
+    "image": "images/dishes/TCD.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "CHL",
@@ -1002,7 +1107,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Empanada",
     "description": "An empanada is a type of baked or fried turnover consisting of pastry and filling, common in Spain, Portugal, other Southern European countries, North African countries, West African countries (where they are known as meat pies in Ghana and Nigeria), South Asian countries, Latin American countries, and the Philippines. The name comes from the Spanish empanar (to bread, i.e., to coat with bread), and translates as 'breaded', that is, wrapped or coated in bread. They are made by folding dough over a filling, which may consist of meat, cheese, tomato, corn, or other ingredients, and then cooking the resulting turnover, either by baking or frying.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Empanada",
-    "image": "images/dishes/CHL.jpg"
+    "image": "images/dishes/CHL.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "CHN",
@@ -1020,7 +1127,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Peking_duck",
     "description": "Peking duck is a dish from Beijing that has been prepared since the Imperial era. The meat is characterized by its thin, crispy skin, with authentic versions of the dish serving mostly the skin and little meat, sliced in front of the diners by the cook. Ducks bred especially for the dish are slaughtered after 65 days and seasoned before being roasted in a closed or hung oven. The meat is often eaten with spring onion, cucumber, and sweet bean sauce, with pancakes rolled around the fillings. Aromatic duck is a similar dish to Peking duck and is popular in the United Kingdom and Ireland.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Peking_duck",
-    "image": "images/dishes/CHN.jpg"
+    "image": "images/dishes/CHN.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "COL",
@@ -1074,7 +1183,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ajiaco",
     "description": "Ajiaco (Spanish pronunciation: [aˈxjako]) is a soup common to Colombia, Cuba, and Peru. Scholars have debated the origin of the dish. The dish is especially popular in the Colombian capital, Bogotá, being called ajiaco santafereño, where it is typically made with chicken, three varieties of potatoes, and the herb Galinsoga parviflora, known locally as guasca or guascas. In Cuba, ajiaco is prepared as a stew, while in Peru the dish is prepared with a number of regionally specific variations.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Ajiaco",
-    "image": "images/dishes/COL.jpg"
+    "image": "images/dishes/COL.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "COM",
@@ -1092,7 +1203,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
     "description": null,
     "description_attribution": null,
-    "image": "images/dishes/COM.jpg"
+    "image": "images/dishes/COM.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "CRI",
@@ -1110,7 +1223,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Casado",
     "description": "A casado (Spanish: married [dish, platillo) is a Costa Rican meal with rice, black beans, plantains, salad, a tortilla, and an optional protein source such as chicken, beef, pork, fish, and other ingredients.\nThe term may have originated when restaurant customers asked to be treated as casados, since married men ate such meals at home. Another theory is that the rice and beans and/or the grouping of dishes are married, since they are always together.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Casado",
-    "image": "images/dishes/CRI.jpg"
+    "image": "images/dishes/CRI.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "HRV",
@@ -1128,7 +1243,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli",
     "description": "Zagorski štrukli or štruklji is a popular traditional Croatian dish served in households across Hrvatsko Zagorje and Zagreb regions in the north of the country, composed of dough and various types of filling which can be either boiled or baked. It is closely related to štruklji, a traditional Slovene dish.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli",
-    "image": "images/dishes/HRV.jpg"
+    "image": "images/dishes/HRV.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "CUB",
@@ -1162,7 +1279,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ropa_vieja",
     "description": "Ropa vieja (English:, Spanish: [ˈropa ˈβjexa]; lit. 'old clothes') is a dish with regional variations in Spain, Latin America and the Philippines. It normally includes some form of stewed beef and tomatoes with a sofrito base. Originating in Spain, it is known today as one of the national dishes of Cuba. The name ropa vieja probably originates from the fact that it was often prepared using food left over from other meals, although it has been suggested that the name comes from the \"tattered appearance\" of the meat.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Ropa_vieja', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/CUB.jpg"
+    "image": "images/dishes/CUB.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "CYP",
@@ -1180,7 +1299,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Souvla",
     "description": "Souvla (Greek: σούβλα) is a popular dish from Cyprus. It consists of large pieces of meat cooked on a long skewer over a charcoal barbecue.\nIt differs from the popular Greek dish souvlaki, in that meat cuts are much larger and slow cooked for a much longer period at a greater distance from the hot charcoal. Traditional souvla is made from the neck and shoulder of lamb, pork and chicken. The meat is cut on the bone into chunks about the size of a medium onion (optional).\nThe meat must be put on a charcoal brazier, called \"foukou\" in Cypriot Greek (Greek: φουκού), then its weight is evenly distributed on the rotisserie, so it cooks evenly on the foukou.\nThe meat is put as far as possible from the charcoal at first. After it is sizzling, it is lowered down to the charcoal so that the skin on the meat goes brown. The process takes between 90 minutes and 3 hours depending on the type of meat, size and heat of fire. Salt, aromatics (such as oregano), oil, and wine are sprinkled or brushed on the meat once the cooking process is well under way. That way the meat stays juicy and does not brown too quickly.\nOver time, various localities have developed their own recipes, which tend to vary the spices added to the meat marinade. A popular variant is Lysiotiki souvla, originating from the village of Lysi.\nTypically, souvla in Greece refers to a whole spit-roasted lamb (ovelias, in Greek: οβελίας) for Easter and other major holidays or specialist restaurants; the Greek dish most similar to souvla is kontosouvli, large pieces of pork cut from the bone, and kokoretsi (lamb innards/offal rolled into a large sausage), or a speciality of the cook in that region of the country.\nCypriots mostly eat souvla to celebrate occasions such as Christmas, Easter etc.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Souvla",
-    "image": "images/dishes/CYP.jpg"
+    "image": "images/dishes/CYP.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "CZE",
@@ -1198,7 +1319,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Vep%C5%99o_knedlo_zelo",
     "description": "Vepřo knedlo zelo (Czech: [vɛpr̝̊o knɛdlo zɛlo]; lit.Tooltip literal translation \"pork, dumpling, sauerkraut\") is the name of one of the national dishes of the Czech Republic. It consists of three primary ingredients: roast pork, usually lean, sliced\ndumpling, either potato or bread, also sliced\nsteamed white (or less often red) sauerkraut\nThe three items are placed separately on a plate, and the pork is covered with its own juice. The dish is believed to have German origins and is also commonly eaten in Slovakia and Austria.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Vep%C5%99o_knedlo_zelo",
-    "image": "images/dishes/CZE.jpg"
+    "image": "images/dishes/CZE.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "COD",
@@ -1216,7 +1339,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Moambe_chicken",
     "description": "Moambe chicken (French: poulet à la moambe or simply poulet moambe, Portuguese: moamba de galinha) is a savory chicken dish popular in Central Africa and considered the national dish of Angola, the Republic of the Congo, and the Democratic Republic of the Congo. The dish itself is made by combining chicken, spices and palm butter to create a stew-like consistency. A number of local or regional variations exist across the Congo and Central Africa; the dish is also known outside the continent.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Moambe_chicken",
-    "image": "images/dishes/COD.jpg"
+    "image": "images/dishes/COD.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "DNK",
@@ -1234,7 +1359,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Stegt_fl%C3%A6sk",
     "description": "Stegt flæsk (Danish: [ˈstekt ˈflesk]) is a dish from Scandinavia consisting of fried pork belly and generally served with potatoes and parsley sauce (persillesovs). The dish is sometimes translated as 'pork strips' or 'crisp fried pork slices'. The pork belly or \"breast\" cut of a pig is used for stegt flæsk and the strips are cut about 1/4 inch thick.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Stegt_fl%C3%A6sk",
-    "image": "images/dishes/DNK.jpg"
+    "image": "images/dishes/DNK.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "DJI",
@@ -1252,7 +1379,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
     "description": null,
     "description_attribution": null,
-    "image": "images/dishes/DJI.jpg"
+    "image": "images/dishes/DJI.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "DMA",
@@ -1270,7 +1399,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Leptodactylus_fallax",
     "description": "Leptodactylus fallax, commonly known as the mountain chicken or giant ditch frog, is a critically endangered species of frog that is native to the Caribbean islands of Dominica and Montserrat. The population declined by at least 80% from 1995 to 2004, with further significant declines later. A tiny wild population remains on Dominica where there are efforts to preserve it, but few or none survive in the wild on Montserrat and its survival now relies on a captive breeding project involving several zoos. The initial decline was linked to hunting for human consumption, along with habitat loss and natural disasters, but the most serious threat now appears to be the fungal disease chytridiomycosis, which was the primary cause of the most recent rapid decline. On Montserrat it is known as the mountain chicken, while on Dominica it is known as the crapaud, which simply means \"toad\" in French.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Leptodactylus_fallax",
-    "image": null
+    "image": null,
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "DOM",
@@ -1288,7 +1419,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Culture_of_the_Dominican_Republic",
     "description": "The culture of the Dominican Republic is a diverse mixture of different influences from around the world. The Dominican people and their customs have origins consisting predominantly in a European cultural basis, with Indigenous and African influences.\nThe Dominican Republic was the site of the first European settlement in the Western Hemisphere, namely Santo Domingo founded in 1493. As a result of over five centuries of Spanish presence in the island, the core of Dominican culture is derived from the culture of Spain. The European inheritances include ancestry, language, traditions, law, the predominant religion and the colonial architectural styles. Soon after the arrival of Europeans, African people were imported to the island to serve as slave labor. The fusion of European, Indigenous, and African traditions and customs contributed to the development of present-day Dominican culture.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Culture_of_the_Dominican_Republic",
-    "image": "images/dishes/DOM.jpg"
+    "image": "images/dishes/DOM.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "ECU",
@@ -1306,7 +1439,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Encebollado",
     "description": "Encebollado (Spanish: onionized, participle of “encebollar” to onionize/to make in onions) is an onion-dressed fish stew from Ecuador, where it is regarded as a national dish.\nAlthough known throughout Ecuador, the dish is most popular in the country's coastal region. It is served with boiled cassava and pickled red onion rings. A dressing of onion is prepared with fresh tomato and spices such as pepper or coriander leaves. It is commonly prepared with albacore, but tuna, billfish, or bonito may also be used. It should be served with lime, toasted corn, and plantain chipsknown as chifles.\nIt possibly originates from the Basque dish by the name of marmitako.\nEncebollado is usually served with plantain chips or bread as side dishes. It may be garnished with lime juice and chili sauce. People in Ecuador eat it for breakfast, lunch, or dinner. Restaurants that sell only this dish start serving it in the early morning. It is popular to consume early in the morning after a night of drinking to cure a \"chuchaqui\" or hangover.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Encebollado",
-    "image": "images/dishes/ECU.jpg"
+    "image": "images/dishes/ECU.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "EGY",
@@ -1343,7 +1478,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ful_medames",
     "description": "Ful medames (Arabic: فول مدمّس, romanized: fūl mudammas, Egyptian Arabic pronunciation: [ˈfuːl meˈdæmmes], lit. 'buried favas'; other spellings include foule mudammes), or simply ful, is a stew of cooked fava beans served with olive oil, cumin, and optionally with chopped parsley, garlic, onion, lemon juice, chili pepper and other vegetables, herbs, and spices. Ful medames is traditionally made in and served out of a large metal jug. It is notably a staple food in Egypt and is considered a national dish.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Ful_medames', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/EGY.jpg"
+    "image": "images/dishes/EGY.jpg",
+    "staple": "Pulses",
+    "staple_key": "pulses"
   },
   {
     "iso3": "SLV",
@@ -1396,7 +1533,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pupusa",
     "description": "A pupusa is a thick griddle cake or flatbread from El Salvador and Honduras made with cornmeal or rice flour stuffed with one or more ingredients including cheese, beans, chicharrón, or squash. It can be served with curtido and tomato sauce and is traditionally eaten by hand. Pupusas have origins in Pre-Columbian Mesoamerica but were first mentioned in 1837 by Guatemalan poet José Batres Montúfar. The pupusa is the national dish of El Salvador. In El Salvador, the pupusa has a national holiday dedicated to it, which is celebrated on the second Sunday of November every year.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Pupusa",
-    "image": "images/dishes/SLV.jpg"
+    "image": "images/dishes/SLV.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "GNQ",
@@ -1414,7 +1553,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Succotash",
     "description": "Succotash is a North American vegetable dish consisting primarily of sweet corn with lima beans or other shell beans. The name succotash is derived from the Narragansett word sahquttahhash, which means \"broken corn kernels\". Other ingredients may be added, such as onions, potatoes, turnips, tomatoes, bell peppers, corned beef, salt pork, or okra.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Succotash', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/GNQ.jpg"
+    "image": "images/dishes/GNQ.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "ERI",
@@ -1432,7 +1573,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
     "description": null,
     "description_attribution": null,
-    "image": "images/dishes/ERI.jpg"
+    "image": "images/dishes/ERI.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "EST",
@@ -1450,7 +1593,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kama_(food)",
     "description": "Kama (from Estonian) is a dish from the Baltic region, most commonly eaten in Estonia and Finland (where it is called talkkuna), based on milled cereals and legumes, traditionally prepared and eaten uncooked as fast food by combining the fine flour mixture with just cow milk or buttermilk. The main ingredient of kama is the \"kama flour\" (kamajahu) which nowadays typically contains a mixture of roasted barley, rye, oat and pea flour.",
     "description_attribution": "Description from Wikipedia page 'Kama (food)', licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Kama_(food)",
-    "image": "images/dishes/EST.jpg"
+    "image": "images/dishes/EST.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "SWZ",
@@ -1468,7 +1613,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Regional_variations_of_barbecue#Shisa_nyama",
     "description": "Shisa nyama, also spelled chisa nyama or chesa nyama, is a term used in many townships to describe a barbecue or braai where friends or families come together to grill meat over an open fire (usually near a butchery). The site is usually provided by the butcher owner, and only people who bought meat from the butcher are allowed to use the free facility. Shisa nyama is a Zulu phrase and, literally, means to \"grill meat\".",
     "description_attribution": "Description from Wikipedia page 'Regional variations of barbecue', licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Regional_variations_of_barbecue#Shisa_nyama",
-    "image": "images/dishes/SWZ.jpg"
+    "image": "images/dishes/SWZ.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "ETH",
@@ -1486,7 +1633,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ethiopian_cuisine",
     "description": "Ethiopian cuisine (Amharic: የኢትዮጵያ ምግብ, Ye-Ītyōṗṗyā məgəb) characteristically consists of vegetable and often very spicy meat dishes. This is usually in the form of wat, a thick stew, served on top of injera (እንጀራ), a large sourdough flatbread, which is about 50 centimeters (20 inches) in diameter and made out of fermented teff flour. Ethiopians usually eat with their right hands, using pieces of injera to pick up bites of entrées and side dishes.\nThe Ethiopian Orthodox Tewahedo Church prescribes a number of fasting periods known as tsom (Ge'ez: ጾም, ṣōm), including all Wednesdays and Fridays and the whole Lenten season (including fifteen days outside Lent proper). Per Oriental Orthodox tradition, the faithful may not consume any kind of animal products (including dairy products and eggs) during fasts; therefore, Ethiopian cuisine contains many dishes that are vegan.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Ethiopian_cuisine",
-    "image": "images/dishes/ETH.jpg"
+    "image": "images/dishes/ETH.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "FJI",
@@ -1504,7 +1653,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/%27Ota_%27ika",
     "description": "ʻOta ʻika is a Oceanian dish consisting of raw fish marinated in citrus juice and coconut milk. The Tongan, Tahitian, and Samoan variants are essentially identical in that the raw fish is briefly marinated in lemon or lime juice until the surface of the flesh becomes opaque. The fish is then mixed with coconut milk and diced vegetables (most commonly cucumber, tomato, carrots, onion, green onion, and spicy peppers). This is the national dish of Tonga.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/%27Ota_%27ika",
-    "image": "images/dishes/FJI.jpg"
+    "image": "images/dishes/FJI.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "FIN",
@@ -1539,7 +1690,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Rye_bread",
     "description": "Rye bread is a type of bread made with various proportions of flour from rye grain. It can be light or dark in color, depending on the type of flour used and the addition of coloring agents, and is typically denser than bread made from wheat flour. Compared to white bread, it is higher in fiber, darker in color, and stronger in flavor. The world's largest exporter of rye bread is Poland.\nRye bread was considered a staple through the Middle Ages. Many different types of rye grain have come from north-central, western, and eastern European countries such as Iceland, Germany, Poland, Austria, Denmark, Sweden, Norway, Finland, Estonia, Latvia, Lithuania, Belarus, Ukraine, Russia, the Netherlands, Belgium, France, and Czechia, and it is also a specialty in the canton of Valais in Switzerland.\nArchaeobotanical discoveries in Britain and Ireland show it was in use in both areas since at least the early Iron Age. However, evidence of sustained intentional cultivation, especially before then, is uncertain. Rye cultivation in Britain and Ireland became relatively uncommon in the 1700s due to a shift in farming techniques and technology during the Second Agricultural Revolution.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Rye_bread', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/FIN.jpg"
+    "image": "images/dishes/FIN.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "FRA",
@@ -1573,7 +1726,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Snails_as_food",
     "description": "Snails are eaten by humans in many areas such as Africa, Southeast Asia and Mediterranean Europe, while in other cultures, snails are seen as a taboo food. Borrowed from the French word for 'snail', the term escargot is what English speakers use to specifically denote edible land snails. Snails as a food date back to ancient times, with numerous cultures worldwide having traditions and practices that attest to their consumption. In the modern era snails are farmed, an industry known as heliciculture.\nThe snails are collected after the rains and are put to \"purge\" (fasting). In the past, the consumption of snails had a marked seasonality, from April to June. Now, snail-breeding techniques make them available all year. Heliciculture occurs mainly in Spain, France, and Italy, which are also the countries with the greatest culinary tradition of the snail. Although throughout history the snail has had little value in the kitchen because it is considered \"poverty food\", in recent times it can be classified as a delicacy thanks to the appreciation given to it by haute cuisine chefs.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Snails_as_food', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/FRA.jpg"
+    "image": "images/dishes/FRA.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "GAB",
@@ -1591,7 +1746,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Moambe_chicken",
     "description": "Moambe chicken (French: poulet à la moambe or simply poulet moambe, Portuguese: moamba de galinha) is a savory chicken dish popular in Central Africa and considered the national dish of Angola, the Republic of the Congo, and the Democratic Republic of the Congo. The dish itself is made by combining chicken, spices and palm butter to create a stew-like consistency. A number of local or regional variations exist across the Congo and Central Africa; the dish is also known outside the continent.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Moambe_chicken",
-    "image": "images/dishes/GAB.jpg"
+    "image": "images/dishes/GAB.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "GEO",
@@ -1632,7 +1789,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Khachapuri",
     "description": "Khachapuri (Georgian: ხაჭაპური, romanized: khach'ap'uri; [ˈχatʃʼapʼuɾi] ) is a Georgian dish of cheese-filled bread. The bread is leavened and allowed to rise, molded into various shapes, and then filled in the center with a mixture of cheese, and sometimes eggs or other ingredients.\nIt is popular in Georgia, both in restaurants and as street food. As a Georgian staple food, the price of making khachapuri is used as a measure of inflation in different Georgian cities by the \"khachapuri index\", developed by the International School of Economics at Tbilisi State University.\nIt is Georgia's national dish, and the item \"The Khachapuri Tradition in Georgia\" was included in the list of Intangible Cultural Heritage elements in Georgia on January 22, 2019. Georgia celebrates \"National Khachapuri Day\" yearly on February 27.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Khachapuri",
-    "image": "images/dishes/GEO.jpg"
+    "image": "images/dishes/GEO.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "DEU",
@@ -1650,7 +1809,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Schweinshaxe",
     "description": "Schweinshaxe (German pronunciation: [ˈʃvaɪnshaksə] ; literally 'swine's hock'), in German cuisine, is a roasted ham hock (or pork knuckle). The ham hock is the end of the pig's leg, just above the ankle and below the meaty ham portion. It is especially popular in Bavaria as Schweinshaxn or Sauhax(n) ([ˈsao̯haks(n̩)]). A variation of this dish is known in parts of Germany as Eisbein, in which the ham hock is pickled and usually slightly boiled.\nSchweinshaxe is one of the formerly typical peasant foods, in which recipes were composed to make inexpensive and tough cuts of meat more palatable (cf. for beef the popular Sauerbraten). Such inexpensive cuts usually require long periods of preparation; the meat is sometimes marinated for days, and in the case of big cuts up to a week. The Schweinshaxe is then roasted at low temperatures, typically—depending on size—for two to three hours.\nThe most popular side dishes are potatoes and cabbage variations. The Bavarian version is classically served with potato dumplings and red cabbage, or with sauerkraut and potatoes.\nThe Austrian version of this dish is called Stelze ([ˈʃtɛltsə]) or in dialect Stötzn/Stelzn ([ˈʃtœˑtsn̩]). It is usually marinated or pre-boiled in a caraway seed and garlic brine, roasted until the skin is crisp, and served with mustard, horseradish, and pickled chili peppers.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Schweinshaxe",
-    "image": "images/dishes/DEU.jpg"
+    "image": "images/dishes/DEU.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "GHA",
@@ -1668,7 +1829,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fufu",
     "description": "Fufu (or fufuo, foofoo, foufou foo-foo ) is a pounded meal found in West African cuisine originally made from boiled cassava, plantains, and cocoyam. Fufu's prevalence in West Africa has been noted in local literature, such as Chinua Achebe's Things Fall Apart.\nFufu is a Twi word originating from the Akans in Ghana. However, the word has been expanded to include several variations of the pounded meal found in other African countries including Sierra Leone, Liberia, Ivory Coast, Burkina Faso, Benin, Togo, Nigeria, Cameroon, the Democratic Republic of Congo, the Central African Republic, the Republic of Congo, Angola and Gabon. It also includes variations in the Greater Antilles and Central America, where African culinary influence is high. In Ghana, Ivory Coast, and Liberia, they use the method of separately mixing and pounding equal portions of boiled cassava with green plantain or cocoyam, or by mixing cassava/plantain/cocoyam flour with water and stirring it on a stove. Its thickness is then adjusted to personal preference, and it is eaten with broth-like soups. Meanwhile, in Nigeria fufu is made solely from fermented cassava, giving it its unique thickness compared to that found elsewhere. It is eaten with a variety of soups (such as Egusi soup and Ogbono soup), vegetables, beef, and fish. In recent years other flours, such as wheat semolina, maize flour, or mashed plantains may take the place of cassava flour. This is common for those in the diaspora or families that live in urban cities. Families in rural areas with access to farmland still maintain the original recipe of using cassava. Fufu is traditionally eaten with the fingers, and a small ball of it can be dipped into an accompanying soup or sauce.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Fufu",
-    "image": "images/dishes/GHA.jpg"
+    "image": "images/dishes/GHA.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "GRC",
@@ -1686,7 +1849,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Greek_salad",
     "description": "Greek salad, choriatiki or Horiatiki (Greek: χωριάτικη σαλάτα or θερινή σαλάτα) is a salad in Greek cuisine generally made with pieces of tomatoes, cucumbers, onion, feta cheese, and olives (typically Kalamata olives) and dressed with salt, Greek oregano, and olive oil. Common additions include lemon juice, green bell pepper, caper berries (especially on the Cyclades islands), and mint or parsley for decoration (mainly in Northern Greece). Greek salad is often imagined as a farmer's breakfast or lunch, as its ingredients resemble those that a Greek farmer might have on hand.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Greek_salad",
-    "image": "images/dishes/GRC.jpg"
+    "image": "images/dishes/GRC.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "GRD",
@@ -1704,7 +1869,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Oil_down",
     "description": "Oil down is a salted meat and vegetable stew that is the national dish of Grenada.\nOil down is popular in local restaurants.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Oil_down",
-    "image": "images/dishes/GRD.jpg"
+    "image": "images/dishes/GRD.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "GTM",
@@ -1722,7 +1889,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pepi%C3%A1n",
     "description": "Pepián is a thick meat stew from Guatemala. It is one of the oldest and most recognizable dishes of Guatemalan cuisine having as its origin the influences from Guatemala's colonial past and the indigenous cuisine. The meat-based stew, thickened with gourd seeds, can be made with beef or chicken (beef is more common in urban centers). Traditional recipes include tomatillo, tomato and hot chili. Guatemalan restaurants in the United States usually consider the dish to be of Maya origin. It is a popular street food in Guatemalan cities.\nIn Guatemala, it is considered a national dish. Pipián is a similar dish from Mexican cuisine.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Pepi%C3%A1n",
-    "image": "images/dishes/GTM.jpg"
+    "image": "images/dishes/GTM.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "GIN",
@@ -1762,7 +1931,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
     "description": null,
     "description_attribution": null,
-    "image": "images/dishes/GIN.jpg"
+    "image": "images/dishes/GIN.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "GNB",
@@ -1780,7 +1951,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bissau-Guinean_cuisine",
     "description": "Bissau-Guinean cuisine is the traditional cuisine of Guinea-Bissau, a West African country located on the Atlantic Ocean. It reflects the country’s diverse ethnic groups, while millet and other grains are more common in inland areas. Seafood, including fish, shrimp, and shellfish, plays an important role in the diet, alongside locally grown crops such as cassava, sweet potatoes, yams, peanuts, beans, and tropical fruits.\nPalm oil, peanuts, onions, tomatoes, peppers and spices are widely used in Bissau-Guinean cooking. Many traditional dishes consisted of rice served with flavored soups and stews, often prepared with fish, meat, vegetables, or peanut based sauces. Portuguese influence can be seen in the use of certain ingredients and cooking techniques introduced during the colonial period, while many dishes remain rooted in indigenous West African culinary traditions.\nFish, shellfish, fruits and vegetables are commonly eaten along with cereal grains, milk, curd and whey. The Portuguese encouraged peanut production. Vigna subterranea (Bambara groundnut) and Macrotyloma geocarpum (Hausa groundnut) are also grown. Black-eyed peas are also part of the diet. Palm oil is harvested.\nCommon dishes include soups and stews. Common ingredients include yams, sweet potato, cassava, onion, tomato and plantain. Spices, peppers and chilis are used in cooking, including Aframomum melegueta seeds (Guinea pepper).\nThree main meals per day is common, at standard breakfast, lunch, and dinner times.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Bissau-Guinean_cuisine",
-    "image": "images/dishes/GNB.jpg"
+    "image": "images/dishes/GNB.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "GUY",
@@ -1798,7 +1971,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Guyanese_pepperpot",
     "description": "Guyanese pepperpot is the Guyanese variation of pepperpot, a slow-cooked stew found in several parts of the Caribbean and mainland Americas.. It is traditionally served at Christmas and other special events. Along with chicken curry, and cook-up rice, pepperpot is one of Guyana's national dishes.\nThis dish is usually reserved for special occasions because it needs to cook for several hours, and mostly eaten on Christmas Day or during the Christmas holiday season, and sometimes on Boxing Day. Like the original Amerindian version it is usually made in a large pot and can be reheated and eaten over several days because the cassareep starts preserving the meat.\nTraditionally, the dish is made using wiri wiri chilli peppers (a Capsicum frutescens cultivar native to Guyana) but due to low availability outside of the country, Scotch bonnet or habanero peppers are commonly accepted substitutes due to their similar spice level and fruitiness.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Guyanese_pepperpot",
-    "image": "images/dishes/GUY.jpg"
+    "image": "images/dishes/GUY.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "HTI",
@@ -1816,7 +1991,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Griot",
     "description": "A griot (; French: [ɡʁi.o]; Manding: jali or jeli (in N'Ko: ߖߋ߬ߟߌ, djeli or djéli in French spelling); also spelt Djali; Serer: paar or kevel or kewel / okawul; Wolof: gewel) is a West African historian, storyteller, praise singer, poet, and/or musician. Griots are masters of communicating stories and history orally, which is an African tradition. Instead of writing history books, oral historians tell stories of the past that they have memorized. Sometimes there are families of historians, and the oral histories are passed down from one generation to the next. Telling a story out loud allows the speaker to use poetic and musical conventions that entertain an audience. This has contributed to many oral histories surviving for hundreds of years without being written down. Through their storytelling, griots preserve and pass on the values of a tribe or people, such as the Senegalese. The Wolof people in Senegal depend on griots to learn about their culture. The griot is a repository of oral tradition and is often seen as a leader due to their position as an advisor to members of the royal family. As a result of the former of these two functions, they are sometimes called bards. They also act as mediators in disputes.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Griot",
-    "image": "images/dishes/HTI.jpg"
+    "image": "images/dishes/HTI.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "HND",
@@ -1834,7 +2011,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Baleada",
     "description": "A baleada (Spanish pronunciation: [baleˈaða]) is a traditional Honduran dish, believed to have originated on the northern coast of the country, particularly La Ceiba. It is composed of a flour tortilla, filled with a smear of mashed refried red beans (a variety of bean native to Central and South America), crema (mantequilla blanca), and crumbled queso duro (salty hard cheese). This is usually called baleada sencilla (simple baleada). Other ingredients may include scrambled eggs, avocados, or meat.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Baleada",
-    "image": "images/dishes/HND.jpg"
+    "image": "images/dishes/HND.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "HUN",
@@ -1869,7 +2048,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Goulash",
     "description": "Goulash (Hungarian: Gulyás, Hungarian pronunciation: [ˈgujaːʃlɛvɛʃ] ) is a meal made of meat and vegetables seasoned with paprika and other spices. Originating in Hungary, goulash is a common meal predominantly eaten in Central Europe but also in other parts of Europe. It is one of the national dishes of Hungary and a symbol of the country.\nIts origins may be traced back as far as the 10th century to stews eaten by Hungarian shepherds. At that time, the cooked and flavoured meat was sun-dried and packed into bags produced from sheep's stomachs, needing only water to make it into a meal. Earlier versions of goulash did not include paprika, as it was not introduced to Europe until the 16th century.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Goulash",
-    "image": "images/dishes/HUN.jpg"
+    "image": "images/dishes/HUN.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "ISL",
@@ -1887,7 +2068,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": null,
     "description": null,
     "description_attribution": null,
-    "image": "images/dishes/ISL.jpg"
+    "image": "images/dishes/ISL.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "IND",
@@ -1916,7 +2099,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Khichdi",
     "description": "Khichdi or khichri (Urdu: کھچڑی, romanised: khicṛī, Hindi: खिचड़ी, romanised: khicṛī, pronounced [ˈkʰɪtʃɽiː], Bengali: খিচুড়ি, romanised: Khicuṛi, Odia: ଖେଚୁଡି, Bhojpuri: 𑂎𑂲𑂡𑂩𑂲, romanised: Khēcharē) is a dish in South Asian cuisine made of rice and lentils (dal) with numerous variations. Variations include bajra and mung dal khichri. In Indian culture, in several regions, especially in the northern areas, it is one of the first solid foods that babies eat.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Khichdi', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/IND.jpg"
+    "image": "images/dishes/IND.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "IDN",
@@ -1966,7 +2151,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nasi_goreng",
     "description": "Nasi goreng (English pronunciation: ), (Indonesian and Malay for 'fried rice') is a Southeast Asian rice dish typically prepared with pre-cooked rice stir-fried in a small amount of oil or margarine and seasoned with ingredients such as sweet soy sauce, shallots, garlic, ground shrimp paste, tamarind and chilli. It is commonly served with additional ingredients, including egg, chicken, prawns and vegetables.\nThe dish is widely consumed across Maritime Southeast Asia, particularly in Indonesia, Malaysia, Singapore, Brunei, and southern Thailand, where it forms part of daily meals, street-food culture and festive cuisine. Nasi goreng is distinguished from other Asian fried rice recipes by its aromatic, smoky flavour, often derived from caramelised sweet soy sauce and powdered shrimp paste, and is generally spicier than Chinese-style fried rice. Over time, many regional variations of nasi goreng have emerged, reflecting local ingredients, culinary influences and distinctive cooking techniques.\nBeyond the region, nasi goreng has gained international recognition, being consumed in countries such as Sri Lanka, Suriname and the Netherlands, reflecting historical patterns of migration and culinary exchange. It is regarded as a national dish of Indonesia, while in Malaysia it is officially recognised as part of the country’s national culinary heritage. In English, the dish is sometimes described as Indonesian or Malaysian fried rice, reflecting its prominence and cultural significance in these national cuisines.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Nasi_goreng', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/IDN.jpg"
+    "image": "images/dishes/IDN.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "IRN",
@@ -1984,7 +2171,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Abgoosht",
     "description": "Abgoosht or abgusht (Persian: آبگوشت Âbgušt, pronounced [ɒːbˈɡuːʃt]; literally \"meat broth\") is an Iranian stew. It is also called dizi (Persian: دیزی, pronounced [diːˈziː]), which refers to the traditional stoneware crocks it is served in. Some describe it as a \"hearty mutton Persian soup thickened with chickpeas.\"",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Abgoosht",
-    "image": "images/dishes/IRN.jpg"
+    "image": "images/dishes/IRN.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "IRQ",
@@ -2002,7 +2191,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Masgouf",
     "description": "Masgouf (Arabic: المسكوف), is a Mesopotamian dish consisting of seasoned, grilled carp; it is often considered the national dish of Iraq.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Masgouf",
-    "image": "images/dishes/IRQ.jpg"
+    "image": "images/dishes/IRQ.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "IRL",
@@ -2039,7 +2230,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Soda_bread",
     "description": "Soda bread is a variety of quick bread in many cuisines which uses sodium bicarbonate (baking soda or bread soda) as a leavening agent instead of yeast. The basic ingredients of soda bread are flour, baking soda, salt, and buttermilk. The lactic acid in the buttermilk reacts with the baking soda to form bubbles of carbon dioxide. Optional ingredients include butter, egg, raisins, or nuts. Quick breads can be prepared quickly and reliably, without requiring the time and labor needed for kneaded yeast breads.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Soda_bread",
-    "image": "images/dishes/IRL.jpg"
+    "image": "images/dishes/IRL.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "ISR",
@@ -2074,7 +2267,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Falafel",
     "description": "Falafel (fə-LAH-fəl; Arabic: فلافل, IPA: [fæˈlæːfɪl] ) is a deep-fried ball or patty-shaped fritter of Egyptian origin that features in Middle Eastern cuisine, particularly Levantine cuisines. It is made from ground fava beans, chickpeas, or both, and mixed with herbs and spices before frying.\nFalafel is often served in a flatbread such as pita, samoon, laffa, or taboon; falafel also frequently refers to a wrapped sandwich that is prepared in this way. The falafel balls may be topped with salads, pickled vegetables, and hot sauce, and drizzled with tahini-based sauces. Falafel balls may also be eaten alone as a snack or served as part of a meze tray.\nFalafel is a popular street food eaten throughout the Middle East. In Egypt and the Arabian Peninsula, it is most often made with fava beans, while in the Levant, it is typically made with chickpeas or sometimes a blend of both.\nFalafel has been the subject of gastronationalistic campaigns in many Middle Eastern countries, most notably in the Israeli–Palestinian conflict, where both sides have claimed ownership of the dish.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Falafel', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/ISR.jpg"
+    "image": "images/dishes/ISR.jpg",
+    "staple": "Pulses",
+    "staple_key": "pulses"
   },
   {
     "iso3": "ITA",
@@ -2092,7 +2287,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pasta",
     "description": "Pasta is a type of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and formed into sheets or other shapes, then cooked by boiling or baking. Pasta was originally only made with durum, although the definition has been expanded to include alternatives for a gluten-free diet, such as rice flour, or legumes such as beans or lentils. Pasta is a staple food of Italian cuisine, and many historians believe that pasta in a form recognizable today was introduced to Italy through Sicily in the Middle Ages as a result of Mediterranean trade networks.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Pasta",
-    "image": "images/dishes/ITA.jpg"
+    "image": "images/dishes/ITA.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "CIV",
@@ -2110,7 +2307,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
     "description": null,
     "description_attribution": null,
-    "image": "images/dishes/CIV.jpg"
+    "image": "images/dishes/CIV.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "JAM",
@@ -2128,7 +2327,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ackee_and_saltfish",
     "description": "Ackee and saltfish is the Jamaican national dish prepared with sauteed ackee and salted codfish with things such as onion, green pepper and tomato.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Ackee_and_saltfish",
-    "image": "images/dishes/JAM.jpg"
+    "image": "images/dishes/JAM.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "JPN",
@@ -2157,7 +2358,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sushi",
     "description": "Sushi (すし, 寿司, 鮨, 鮓; pronounced [sɯɕiꜜ] or [sɯꜜɕi] ) is a traditional Japanese dish made with vinegared rice (鮨飯, sushi-meshi), typically seasoned with sugar and salt, and combined with a variety of ingredients (ねた, neta), such as seafood, vegetables, or meat; raw seafood is the most common, although some may be cooked. While sushi has numerous styles and presentations, the current defining component is the vinegared rice, also known as shari (しゃり), or sumeshi (酢飯).\nThe modern form of sushi is believed to have been created by Hanaya Yohei, who invented nigiri-zushi, the most commonly recognized type today, in which seafood is placed on hand-pressed, vinegared rice. This innovation occurred around 1824 in the Edo period (1603–1867). It was the fast food of the chōnin class in the Edo period.\nSushi is traditionally made with medium-grain white rice, although it can also be prepared with brown rice or short-grain rice. It is commonly prepared with seafood, such as squid, eel, yellowtail, salmon, tuna, or imitation crab meat (surimi). Certain types of sushi are vegetarian. It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish.\nSushi is sometimes confused with sashimi, a dish that consists of thinly sliced raw fish or occasionally meat, without sushi rice. Today, sushi is considered one of the most popular dishes in the world.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Sushi",
-    "image": "images/dishes/JPN.jpg"
+    "image": "images/dishes/JPN.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "JOR",
@@ -2175,7 +2378,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mansaf",
     "description": "Mansaf (Arabic: منسف /‍ˈ‍man‍.‍saf‍‍‍/) is a traditional Jordanian dish made of lamb, cooked in a sauce of fermented dried yogurt and served with rice or bulgur.\nIt is a popular dish eaten throughout the Levant. It is considered the national dish of Jordan and common and popular especially in Palestine. The name of the dish comes from the term \"large tray\" or \"large dish\", and is speculated to have biblical, ancient roots. The dish evolved greatly between the 1940s and late 1980s, undergoing changes in the recipe as well as in the preparation process.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Mansaf",
-    "image": "images/dishes/JOR.jpg"
+    "image": "images/dishes/JOR.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "KAZ",
@@ -2193,7 +2398,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Beshbarmak",
     "description": "Beshbarmak (Kyrgyz: бешбармак, romanized: beşbarmak; Bashkir: бишбармаҡ, romanized: bişbarmaq; lit. 'five fingers') is a meat, noodles, and onion broth dish in Central Asian cuisine. It is also known as naryn in Xinjiang, Uzbekistan, Kyrgyzstan and Kazakhstan, as turama in Karakalpakstan and Dagestan, as dograma in Turkmenistan, and as bişbarmaq or qullama in Bashkortostan and Tatarstan. Beshbarmak, which means \"five fingers\" in Turkic languages, refers to the traditional practice of eating the dish with one's hands. This name is believed to have emerged later, especially after Russian cultural and ethnographic observations of the nomadic peoples of Central Asia. Another name for beshbarmak in Kyrgyz is tuuralgan et, which means crumbled or chopped meat. Beshbarmak is usually made from finely chopped boiled meat, mixed with dough (typically egg noodles) and chyk, an onion sauce. It is typically served on large communal platters, shared between several people, after shorpo, a first course of mutton broth served in bowls called kese. It is also followed by a broth called ak-serke (shorpo mixed with kymyz or ayran), which is thought to help with settling the stomach. Festive beshbarmak can be cooked together with qazı and chuchuk.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Beshbarmak",
-    "image": "images/dishes/KAZ.jpg"
+    "image": "images/dishes/KAZ.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "KEN",
@@ -2220,7 +2427,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sukuma_wiki",
     "description": "Sukuma wiki is an East African dish made with collard greens, known as sukuma, cooked with onions and spices. It is often served and eaten with ugali (made from maize flour).\nIn Tanzania, Kenya, Uganda and other parts of East Africa, colewort are more commonly known by their Swahili name, sukuma, and are often referred to as collard greens. It is also commonly mistaken for kale.\nThe literal translation of the phrase 'sukuma wiki' is to \"push the week\" or \"stretch the week\". It is a vegetable that is generally affordable and available all-year round in this region. It forms part of the staple dish in this region together with ugali or sima. Sukuma is also known as \"agaar\" in the Somali language and is part of Somali culture.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Sukuma_wiki', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/KEN.jpg"
+    "image": "images/dishes/KEN.jpg",
+    "staple": "Maize",
+    "staple_key": "maize"
   },
   {
     "iso3": "KIR",
@@ -2238,7 +2447,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/L%C5%AB%CA%BBau_(food)",
     "description": "Lūʻau, luʻau, laulau, lū, rourou, rukau, fāfā, hāhā, and palusami are all related dishes found throughout Polynesia based on the use of taro leaves as a primary ingredient. While taro is known worldwide as a root vegetable, the leaves with stems can be consumed as well. The base recipe is vegetarian. Most often, coconut milk was added, and later meat or seafood. The texture of the dish ranges from a thick soup to a dense cake.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/L%C5%AB%CA%BBau_(food)",
-    "image": "images/dishes/KIR.jpg"
+    "image": "images/dishes/KIR.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "PRK",
@@ -2256,7 +2467,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Naengmyeon",
     "description": "Naengmyeaon (냉면, in South Korea) or Raengmyŏn (랭면, in North Korea) is a noodle dish of North Korean origin which consists of long and thin handmade noodles made from the flour and starch of various ingredients, including most commonly buckwheat (메밀, memil) but also potatoes, sweet potatoes, arrowroot starch (darker color and chewier than buckwheat noodles), and kudzu (칡, chik). Other varieties of naengmyeon are made from ingredients such as seaweed and green tea.\nIn modern times, the mul naengmyeon (물 냉면) variant is commonly associated with and popularly consumed during the summer; however, it was historically a dish enjoyed during winter.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Naengmyeon",
-    "image": "images/dishes/PRK.jpg"
+    "image": "images/dishes/PRK.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "KOR",
@@ -2301,7 +2514,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kimchi",
     "description": "Kimchi (; Korean: 김치; pronounced [kim.tɕʰi]) is a traditional Korean side dish (banchan) consisting of salted and fermented vegetables, most often Chinese cabbage or Korean radish. A wide selection of seasonings are used, including gochugaru (Korean chili powder), spring onions, garlic, ginger, and jeotgal (salted seafood). Kimchi is also used in a variety of soups and stews. Kimchi is a staple food in Korean cuisine and is eaten as a side dish with almost every Korean meal.\nThere are hundreds of different types of kimchi made with different vegetables as the main ingredients. Examples of variants include baechu-kimchi, kkakdugi, chonggak-kimchi, and oi-sobagi. Traditionally, winter kimchi, called gimjang, was stored in large earthenware fermentation vessels, called onggi, in the ground to prevent freezing during the winter months and to keep it cool enough to slow down the fermentation process during summer months. The process of making kimchi was called gimjang and was based on participation by the whole village. The vessels are also kept outdoors in special terraces called jangdokdae. The use of household kimchi refrigerators has become a more common method for keeping fermenting kimchi at the right temperature.\nKimchi has gained international recognition as a traditional Korean food and has been promoted as part of Korean cultural heritage. Its preparation methods and cultural significance have been documented as part of Korea's intangible cultural heritage.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Kimchi",
-    "image": "images/dishes/KOR.jpg"
+    "image": "images/dishes/KOR.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "KWT",
@@ -2319,7 +2534,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
     "description": null,
     "description_attribution": null,
-    "image": "images/dishes/KWT.jpg"
+    "image": "images/dishes/KWT.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "KGZ",
@@ -2337,7 +2554,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Beshbarmak",
     "description": "Beshbarmak (Kyrgyz: бешбармак, romanized: beşbarmak; Bashkir: бишбармаҡ, romanized: bişbarmaq; lit. 'five fingers') is a meat, noodles, and onion broth dish in Central Asian cuisine. It is also known as naryn in Xinjiang, Uzbekistan, Kyrgyzstan and Kazakhstan, as turama in Karakalpakstan and Dagestan, as dograma in Turkmenistan, and as bişbarmaq or qullama in Bashkortostan and Tatarstan. Beshbarmak, which means \"five fingers\" in Turkic languages, refers to the traditional practice of eating the dish with one's hands. This name is believed to have emerged later, especially after Russian cultural and ethnographic observations of the nomadic peoples of Central Asia. Another name for beshbarmak in Kyrgyz is tuuralgan et, which means crumbled or chopped meat. Beshbarmak is usually made from finely chopped boiled meat, mixed with dough (typically egg noodles) and chyk, an onion sauce. It is typically served on large communal platters, shared between several people, after shorpo, a first course of mutton broth served in bowls called kese. It is also followed by a broth called ak-serke (shorpo mixed with kymyz or ayran), which is thought to help with settling the stomach. Festive beshbarmak can be cooked together with qazı and chuchuk.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Beshbarmak",
-    "image": "images/dishes/KGZ.jpg"
+    "image": "images/dishes/KGZ.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "LAO",
@@ -2355,7 +2574,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Larb",
     "description": "Laab / Larb (Lao: ລາບ; Thai: ลาบ, RTGS: lap, pronounced [lâːp], also spelled laap, larp, or lahb) is a type of Lao meat salad that is the national dish of Laos, along with green papaya salad and sticky rice. Laab in the Lao language is a noun that refers to meat or other flesh that has been finely chopped and pounded. It is also considered a food of good luck in both Laos and Thailand because it has homonyms that mean 'lucky' in both languages, derived from लाभ in Sanskrit. Laab is of Lao origin, but is also eaten in other regions, most prominently the neighboring former Lan Xang territory, or modern day Laos and the northeastern and northern areas of Thailand, Isan and Lanna where the Lao have extended their influence. Other local variants of laab also feature in the cuisines of the Tai peoples of Shan State, Burma, and Yunnan Province, China.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Larb",
-    "image": "images/dishes/LAO.jpg"
+    "image": "images/dishes/LAO.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "LVA",
@@ -2385,7 +2606,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Layered_rye_bread",
     "description": "Layered rye bread (Latvian: rupjmaizes kārtojums) is a traditional Latvian dessert made from rye breadcrumbs, blackcurrant or lingonberry jam, and whipped cream. It is topped off with grated dark chocolate and/or cinnamon and often served with fresh berries and cottage cheese ice cream.\nLayered rye bread is similar in appearance and construction to the trifle of the British Isles, and is sometimes called rye bread trifle or Latvian ambrosia. Layered rye bread is an iconic Latvian food, and is considered one of the national dishes. It was the sweet chosen to represent Latvia in the Café Europe initiative of the Austrian presidency of the European Union, on Europe Day 2006.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Layered_rye_bread', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/LVA.jpg"
+    "image": "images/dishes/LVA.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "LBN",
@@ -2433,7 +2656,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kibbeh",
     "description": "Kibbeh (, also kubba and other spellings; Arabic: كبّة, romanized: kibba; Egyptian Arabic: كبيبة, romanized: kobeba) is a popular dish in the Arab world and the Levant in particular, made of spiced lean ground meat and bulgur wheat. Kibbeh is considered to be a national dish of Lebanon and Syria.\nIn Levantine cuisine, kibbeh is made by pounding bulgur wheat together with meat into a fine paste and forming it into ovoid shapes, with toasted pine nuts and spices. It may also be layered and cooked on a tray, deep-fried, grilled, or served raw. The Syrian city of Aleppo can lay claim to at least 17 types of kibbeh. In Mesopotamian cuisine, versions with rice or farina are found.\nOutside of Lebanon and Syria, versions are found in Cyprus, Egypt, Israel, Palestine, the Persian Gulf, Armenia, and Turkey, and among Assyrian people. It is also found throughout Latin American countries that received substantial numbers of immigrants from the Levant during the late 19th and early 20th centuries, as well as parts of North America.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Kibbeh",
-    "image": "images/dishes/LBN.jpg"
+    "image": "images/dishes/LBN.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "LSO",
@@ -2451,7 +2676,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ugali",
     "description": "Ugali, also known as posho, nsima, papa, pap, bogobe, sadza, isitshwala, akume, amawe, ewokple, akple, and other names, is a type of corn meal made from maize or corn or mahindi flour in several African countries: Kenya, Uganda, South Sudan, Tanzania, Zimbabwe, Zambia, Lesotho, Eswatini, Angola, Mozambique, Namibia, Democratic Republic of the Congo, Rwanda, Malawi, Botswana and South Africa, and in West Africa by the Ewes of Togo, Ghana, Benin, Nigeria and Ivory Coast. It is cooked in boiling water or milk until it reaches a stiff or firm dough-like consistency. In 2017, the dish was added to the UNESCO Representative List of the Intangible Cultural Heritage of Humanity, one of a few foods on the list.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Ugali",
-    "image": "images/dishes/LSO.jpg"
+    "image": "images/dishes/LSO.jpg",
+    "staple": "Maize",
+    "staple_key": "maize"
   },
   {
     "iso3": "LBR",
@@ -2490,7 +2717,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Liberian_cuisine",
     "description": "Liberian cuisine refers to the cuisine of Liberia. It is centered on rice, cassava, plantain, yam, tropical fruits and vegetables (potatoes, greens, cassava leaf, okra, cabbage), as well as fish and meat. Liberian cuisine is also influenced by African Americans through Americo-Liberians and Caribbean food and recipes.\nLiberia also has a tradition of baking, including cornbread, sour bread, rice bread, banana bread, and cakes.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Liberian_cuisine",
-    "image": "images/dishes/LBR.jpg"
+    "image": "images/dishes/LBR.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "LBY",
@@ -2536,7 +2765,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Couscous",
     "description": "Couscous is a traditional North African dish of small steamed granules of rolled semolina that is often served with a stew spooned on top. Pearl millet, sorghum, bulgur, and other cereals are often cooked in much the same way in West Africa, and the resulting dishes are also sometimes called couscous.\nCouscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya. It was integrated into French and European cuisine at the beginning of the twentieth century, through the French colonial empire and the Pieds-Noirs of Algeria.\nIn 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Couscous",
-    "image": "images/dishes/LBY.jpg"
+    "image": "images/dishes/LBY.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "LIE",
@@ -2554,7 +2785,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/K%C3%A4sesp%C3%A4tzle",
     "description": "Käsespätzle (German for \"spätzle with cheese\", also called Käsknöpfle in Vorarlberg and Liechtenstein or Kasspatzl in Tyrol, Austria and Bavaria) is a traditional dish of the German regions of Swabia, Baden and Allgäu, and also in the Austrian regions Vorarlberg and Tyrol, as well as Liechtenstein and Switzerland.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/K%C3%A4sesp%C3%A4tzle",
-    "image": "images/dishes/LIE.jpg"
+    "image": "images/dishes/LIE.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "LTU",
@@ -2588,7 +2821,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bigos",
     "description": "Bigos (Polish pronunciation: [ˈbʲiɡɔs] ), or hunter's stew, is a Polish stew of chopped meat of various kinds stewed with sauerkraut, shredded fresh cabbage and spices. It is served hot and can be enriched with additional vegetables and wine. Originally from Poland, the dish also became traditional in the areas of the vast Polish–Lithuanian Commonwealth.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Bigos', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/LTU.jpg"
+    "image": "images/dishes/LTU.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "LUX",
@@ -2606,7 +2841,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Judd_mat_Gaardebounen",
     "description": "Judd mat Gaardebounen is a savory dish of smoked pork collar and broad beans which is one of the most widely recognized national dishes of Luxembourg. It is associated with the village of Gostingen in the south-east of the country where the inhabitants have earned the nickname of Bounepatscherten (\"bean-madmen\") as a result of their well-known broad beans.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Judd_mat_Gaardebounen",
-    "image": "images/dishes/LUX.jpg"
+    "image": "images/dishes/LUX.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "MDG",
@@ -2624,7 +2861,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Romazava",
     "description": "Romazava ([rumaˈzavə̥]) is the national dish of Madagascar, consisting of greens, zebu meat, tomatoes, and onions, typically accompanied by a portion of rice. An integral component of the stew is brèdes mafana, called anamalaho in Malagasy; the plant holds an acid amide called spilanthol in its buds that elicits a tingly, pungent, citrusy and mouth-numbing effect, inducing excessive saliva production.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Romazava",
-    "image": "images/dishes/MDG.jpg"
+    "image": "images/dishes/MDG.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "MWI",
@@ -2632,7 +2871,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "MYS",
@@ -2661,7 +2902,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nasi_lemak",
     "description": "Nasi lemak (Jawi: ناسي لمق; Malay pronunciation: [ˌnasi ləˈmaʔ]; lit. 'fatty rice') is a dish originating in Malay cuisine that consists of rice cooked in coconut milk and pandan leaf. It is commonly found in Malaysia, where it is considered the national dish. As it is common throughout the Malay world, it is also a native dish in neighbouring areas with significant ethnic Malay populations, such as Singapore and Southern Thailand. In Indonesia, it can be found in parts of Sumatra, especially the Malay regions of Riau, Riau Islands, and Medan. Nasi lemak can also be found in the Philippines as well as in Australia's external territories of Christmas Island and Cocos (Keeling) Islands.\nIt is considered an essential dish for a typical Malay-style breakfast, and it has been recognised by the National Heritage Department of Malaysia. It was nominated to the UNESCO Intangible Cultural Heritage List in 2024 by Malaysia, where it was subsequently listed.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Nasi_lemak', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/MYS.jpg"
+    "image": "images/dishes/MYS.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "MDV",
@@ -2679,7 +2922,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mas_huni",
     "description": "Mas huni (Dhivehi: މަސްހުނި) is a typical Maldivian breakfast, consisting of tuna, onion, coconut, lime juice, salt to taste and chili. All ingredients are finely chopped and mixed with the grated meat of the coconut. This dish is usually eaten with freshly baked roshi (flatbread) and sweetened hot tea.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Mas_huni",
-    "image": "images/dishes/MDV.jpg"
+    "image": "images/dishes/MDV.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "MLI",
@@ -2697,7 +2942,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Malian_cuisine",
     "description": "Cuisine in Mali includes rice and millet as staples of Mali, a food culture heavily based on cereal grains. Grains are generally prepared with sauces made from edible leaves, such as spinach, sweet potato or baobab, with tomato peanut sauce. The dishes may be accompanied by pieces of grilled meat (typically chicken, mutton, beef, or goat).\nMalian cuisine varies regionally. Part of West African cuisine, other popular dishes in Mali include fufu, Dibi, Jollof rice, and maafe (peanut butter sauce). The National dish is Tiguadege Na, a creamy peanut stew with various meats like beef, chicken or meatballs.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Malian_cuisine",
-    "image": "images/dishes/MLI.jpg"
+    "image": "images/dishes/MLI.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "MLT",
@@ -2738,7 +2985,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Stuffat_tal-Fenek",
     "description": "Stuffat tal-Fenek is a type of rabbit stew in Maltese cuisine. It is the national dish of Malta. It is typically slow-cooked or braised with wine, tomatoes, garlic, bay leaves, cloves, salt, pepper and vegetables. It is sometimes served in two courses by pouring the sauce over pasta as a first course and serving the rabbit and vegetables as a main course.\nThe dish may have originated as a form of symbolic resistance to the hunting restrictions imposed by the Knights of St John. The dish gained in popularity after the lifting of restrictions in the late 18th century (and by which time the indigenous breed, Tax-Xiber, had multiplied and prices dropped) and after local domestication of rabbits, a practice which may have been imported from France.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Stuffat_tal-Fenek', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/MLT.jpg"
+    "image": "images/dishes/MLT.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "MHL",
@@ -2756,7 +3005,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Humpback_grouper",
     "description": "The humpback grouper (Chromileptes altivelis), also known as the panther grouper, (in Australia) barramundi cod, (in the Philippines, in Tagalog) lapu-lapung senorita, (in the Philippines, in Bisayan) miro-miro, (in France) mérou de Grace Kelly, (in Japan) sarasa-hata, (in India) kalava, and many other local names, is a species of marine ray-finned fish. Specifically, it is a grouper from the subfamily Epinephelinae, which is in the family Serranidae, which also includes the anthias and sea basses. It occurs in the Western Pacific Ocean.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Humpback_grouper",
-    "image": "images/dishes/MHL.jpg"
+    "image": "images/dishes/MHL.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "MRT",
@@ -2764,7 +3015,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "MUS",
@@ -2782,7 +3035,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
     "description": null,
     "description_attribution": null,
-    "image": "images/dishes/MUS.jpg"
+    "image": "images/dishes/MUS.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "MEX",
@@ -2828,7 +3083,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Taco",
     "description": "A taco is a traditional Mexican dish consisting of a small hand-sized corn- or wheat-based tortilla topped with a filling. The tortilla is then folded around the filling and eaten by hand. A taco can be made with a variety of fillings, including beef, pork, chicken, seafood, beans, vegetables, and cheese, and garnished with various condiments, such as salsa, guacamole, or sour cream, and vegetables, such as lettuce, coriander, onion, tomatoes, and chiles. Tacos are a common form of antojitos, or Mexican street food, which have spread around the world.\nTacos can be contrasted with similar foods such as burritos, which are often much larger and rolled rather than folded; taquitos, which are rolled and fried; or chalupas/tostadas, in which the tortilla is fried before filling.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Taco', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/MEX.jpg"
+    "image": "images/dishes/MEX.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "FSM",
@@ -2836,7 +3093,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "MDA",
@@ -2854,7 +3113,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/M%C4%83m%C4%83lig%C4%83",
     "description": "Mămăligă (Romanian pronunciation: [məməˈliɡə] ;) is a dish made out of yellow maize flour, traditional in Romania, Moldova, Hungary (puliszka, mamaliga or málé), and Ukraine (kulesha or mamałyga). On the Balkan Peninsula, the dish is known as kačamak. It is similar to Georgian ghomi (alternatively called mamaliga) and Italian polenta.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/M%C4%83m%C4%83lig%C4%83",
-    "image": "images/dishes/MDA.jpg"
+    "image": "images/dishes/MDA.jpg",
+    "staple": "Maize",
+    "staple_key": "maize"
   },
   {
     "iso3": "MCO",
@@ -2872,7 +3133,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
     "description": null,
     "description_attribution": null,
-    "image": "images/dishes/MCO.jpg"
+    "image": "images/dishes/MCO.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "MNG",
@@ -2904,7 +3167,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Buuz",
     "description": "Buuz (; Mongolian: ᠪᠤᠤᠵᠠ (Бууз) [pʊ́ːts(ə)]; Buryat: Бууза ᠪᠤᠤᠽᠠ [ˈbʊː(d)z(ɐ)]) are a type of Mongolian steamed dumpling filled with meat. An example of authentic Mongolian and Buryatian cuisine, the dish is traditionally eaten at home during Tsagaan Sar, the Lunar New Year. In modern times it is also offered at restaurants and small cafes (\"guanz\") throughout the capital city of Ulaanbaatar, sometimes eaten with soy sauce.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Buuz', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/MNG.jpg"
+    "image": "images/dishes/MNG.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "MNE",
@@ -2922,7 +3187,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Njegu%C5%A1ki_pr%C5%A1ut",
     "description": "Njeguški pršut (Serbian Cyrillic: Његушки пршут) is a specialty of Njeguši in Montenegro. Pršut is dry-cured ham, served uncooked, similar to Italian prosciutto crudo. Its particular flavour and aroma are, according to its producers, the result of the mixture of sea and mountain air and beech wood burned during the drying process.\nThe curing process includes salting with sea salt for about three weeks, pressing to remove excess liquid for about three weeks, light smoking and drying in the cool mountain breeze for three months followed by maturing process. The whole cycle takes about a year.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Njegu%C5%A1ki_pr%C5%A1ut",
-    "image": "images/dishes/MNE.jpg"
+    "image": "images/dishes/MNE.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "MAR",
@@ -2956,7 +3223,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Couscous",
     "description": "Couscous is a traditional North African dish of small steamed granules of rolled semolina that is often served with a stew spooned on top. Pearl millet, sorghum, bulgur, and other cereals are often cooked in much the same way in West Africa, and the resulting dishes are also sometimes called couscous.\nCouscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya. It was integrated into French and European cuisine at the beginning of the twentieth century, through the French colonial empire and the Pieds-Noirs of Algeria.\nIn 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Couscous",
-    "image": "images/dishes/MAR.jpg"
+    "image": "images/dishes/MAR.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "MOZ",
@@ -2964,7 +3233,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "MMR",
@@ -2982,7 +3253,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mohinga",
     "description": "Mohinga (Burmese: မုန့်ဟင်းခါး, MLCTS: mun.hang: hka:, IPA: [mo̰ʊɰ̃hɪ́ɰ̃ŋá]; also spelt mont hin gar) is the national dish of Myanmar. Mohinga is a fish soup made with rice noodles, typically served as a hearty breakfast. It features a rich broth flavored with lemongrass, turmeric, and fish sauce, often garnished with boiled eggs, cilantro, and crispy fritters. Mohinga is readily available in most parts of the country, sold by street hawkers and roadside stalls in larger cities. Mohinga is traditionally eaten for breakfast, but nowadays it is eaten at any time of day. Egg, onions, or parsley can be added to the dish.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Mohinga",
-    "image": "images/dishes/MMR.jpg"
+    "image": "images/dishes/MMR.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "NAM",
@@ -2990,7 +3263,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "NRU",
@@ -3008,7 +3283,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/%27Ota_%27ika",
     "description": "ʻOta ʻika is a Oceanian dish consisting of raw fish marinated in citrus juice and coconut milk. The Tongan, Tahitian, and Samoan variants are essentially identical in that the raw fish is briefly marinated in lemon or lime juice until the surface of the flesh becomes opaque. The fish is then mixed with coconut milk and diced vegetables (most commonly cucumber, tomato, carrots, onion, green onion, and spicy peppers). This is the national dish of Tonga.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/%27Ota_%27ika",
-    "image": "images/dishes/NRU.jpg"
+    "image": "images/dishes/NRU.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "NPL",
@@ -3026,7 +3303,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nepalese_cuisine",
     "description": "Nepali cuisine comprises a variety of cuisines based upon ethnicity, alluvial soil and climate relating to cultural diversity and geography of Nepal and neighboring regions of Sikkim and Gorkhaland. Dal-bhat-tarkari (Nepali: दाल भात तरकारी) is eaten throughout Nepal. Dal is a soup made of lentils and spices, bhat—usually rice but sometimes another grain—and a vegetable curry, tarkari. Condiments are usually small amounts of spicy pickle (achaar, अचार) which can be fresh or fermented, mainly of dried mustard greens (called gundruk ko achar) and radish (mula ko achar) and of which there are many varieties. Other accompaniments may be sliced lemon (nibuwa) or lime (kagati) with fresh green chilli (hariyo khursani) and a fried papad and also Islamic food items such as rice pudding, sewai, and biryani. Dhindo (ढिंडो) is the national dish of Nepal, primarily made from flour of millet and is served with achar of gundruk 'dried spinach'. A typical example of Nepali cuisine is the Chaurasi Byanjan (Nepali: चौरासी व्यञ्जन) set where bhat (rice) is served in a giant leaf platter (patravali) along with 84 different Nepali dishes each served on small plates. It is mostly served during weddings and Pasni (rice feeding ceremony).\nMomo is a Himalayan dumpling, filled with minced meat in a flour dough, given different shapes and then cooked by steaming. It is one of the most popular foods in Nepal and the regions of Sikkim, Darjeeling and Kalimpong in India where Nepali-speaking Indians have a presence. Momo were originally filled with buffalo meat but are now commonly filled with goat or chicken, as well as vegetarian preparations. Special foods such as sel roti, finni roti and patre are eaten during festivals such as Tihar. Sel roti is a traditional Nepali homemade ring-shaped rice bread which is sweet to taste. Other foods have hybrid Tibetan and Indian influence.\nChow mein is a Nepali favorite in modern times based on Chinese-style stir-fried noodles. It is one of the most beloved everyday staple lunches in Nepali households.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Nepalese_cuisine",
-    "image": "images/dishes/NPL.jpg"
+    "image": "images/dishes/NPL.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "NLD",
@@ -3044,7 +3323,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Stamppot",
     "description": "Stamppot (Dutch: [ˈstɑmpɔt] ; lit. 'mash pot') is a traditional Dutch dish made from a combination of smashed potatoes with one or several vegetables and typically garnished with sausages.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Stamppot",
-    "image": "images/dishes/NLD.jpg"
+    "image": "images/dishes/NLD.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "NZL",
@@ -3062,7 +3343,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Meat_pie",
     "description": "A meat pie is a pie baked with pastry with a filling of meat and often other savory ingredients. They are found in cuisines worldwide.\nMeat pies are usually baked, fried, or deep-fried to brown them and develop the flavour through the Maillard reaction. Many varieties have a flaky crust due to the incorporation of butter to develop a flaky texture when baking.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Meat_pie', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/NZL.jpg"
+    "image": "images/dishes/NZL.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "NIC",
@@ -3099,7 +3382,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gallo_pinto",
     "description": "Gallo pinto or gallopinto is a traditional rice and bean dish from Central America. Consisting of rice and beans as a base, gallo pinto is important to both Nicaragua and Costa Rica, both of which consider it a national dish. The beans in gallo pinto are cooked with garlic, oregano and onion. When the bean juice is in equal parts with the red beans, they are then combined with leftover or previously prepared rice. The rice in the Nicaraguan version is prepared with salt and onions.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Gallo_pinto', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/NIC.jpg"
+    "image": "images/dishes/NIC.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "NER",
@@ -3117,7 +3402,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dambou",
     "description": "Dambu or dambou is a dish native to the Zarma and Songhai of Southwestern Niger made from cereals and moringa. It is consumed at any time but mainly during festive occasions such as outdoorings and weddings. This dish is also common among the Dendi people of North Benin and other West African cities. It is also common in the Zongo settlements where the Songhai and Zarma travel.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Dambou",
-    "image": "images/dishes/NER.jpg"
+    "image": "images/dishes/NER.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "NGA",
@@ -3135,7 +3422,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tuwon_shinkafa",
     "description": "Tuwon shinkafa is a type of Nigerian and Nigerien rice swallow from Niger and the northern part of Nigeria. It is a thick pudding prepared from local rice that is soft and sticky, and is usually served with different types of soups like miyan kuka and miyan taushe. Two variants made from maize and sorghum flour are called tuwon masara and tuwon dawa (made with sorghum), respectively. In Ghana, tuwon shinkafa is called omo tuo(Akan) or mɔlukple(Ewe).",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Tuwon_shinkafa",
-    "image": "images/dishes/NGA.jpg"
+    "image": "images/dishes/NGA.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "MKD",
@@ -3153,7 +3442,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tav%C4%8De_grav%C4%8De",
     "description": "Tavče gravče (Macedonian: Тавче-гравче) is a traditional Macedonian dish. It is prepared with fresh beans and can be found in many restaurants in North Macedonia. It is also commonly eaten by the Macedonian diaspora. This meal is baked and served in a traditional unglazed earthenware pot. The name of the dish may be translated as \"beans on a tava\". Tavče gravče is considered the national dish of North Macedonia. \"Tavče gravče Tetovo style\" is a popular regional variation.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Tav%C4%8De_grav%C4%8De",
-    "image": "images/dishes/MKD.jpg"
+    "image": "images/dishes/MKD.jpg",
+    "staple": "Pulses",
+    "staple_key": "pulses"
   },
   {
     "iso3": "NOR",
@@ -3184,7 +3475,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/F%C3%A5rik%C3%A5l",
     "description": "Fårikål (Norwegian pronunciation: [ˈfòːrɪkɔɫ, ˈfɔ̀rːɪkɔɫ]) is a traditional Norwegian dish and the country's national dish. It consists of pieces of mutton with bone, cabbage, whole black pepper, and occasionally a little wheat flour, cooked for several hours in a casserole, traditionally served with potatoes boiled in their skins. The dish is typically prepared in early autumn, and over 70% of the Norwegian population reports eating the dish at least once during this time period.\nFårikål Feast Day is celebrated on the last Thursday in September each year.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/F%C3%A5rik%C3%A5l', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/NOR.jpg"
+    "image": "images/dishes/NOR.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "OMN",
@@ -3202,7 +3495,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Omani_cuisine",
     "description": "Shuwaa is a meal eaten only on festive occasions. The dish consists of chunks of goat, sheep, cow, or camel meat marinated in a spicy date paste and roasted in a special oven, which is a pit dug in the ground. This is usually a communal activity by an entire village. The meat is flavoured with a variety of spices, then wrapped in sacks made of dry leaves, which are in turn placed into the oven.",
     "description_attribution": "Description from Wikipedia page 'Omani cuisine', licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Omani_cuisine",
-    "image": "images/dishes/OMN.jpg"
+    "image": "images/dishes/OMN.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "PAK",
@@ -3256,7 +3551,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Biryani",
     "description": "Biryani is a mixed rice dish traditionally made with spiced meat, seafood, or vegetables. It was present in Mughal-era India, though whether it was created there is debated. It is thought to derive from a Persian rice dish, either pilau or birinj biryan. The dish makes use of slow-cooking as in Persian pilau, combined with Persian-style yoghurt-marinated meat and a spicy Indian style of cooking; it was likely developed in the Mughal court kitchens. It is also possible that biryani was brought to South India before the Mughal era, or that pilau was brought to India and biryani was developed from it before being adopted by the Mughals. Biryani is one of the most popular dishes in South Asia and among the South Asian diaspora. The dish is often associated with the region's Muslim population in particular, but is nevertheless a mainstream culinary staple embraced by every demographic. Similar dishes are prepared in many other countries, often with local variations, and often brought there by South Asian diaspora populations. Biryani is the most-ordered dish on Indian online food ordering and delivery services, is used in weddings and celebrations throughout the region, and has been described as the most popular dish in India.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Biryani', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/PAK.jpg"
+    "image": "images/dishes/PAK.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "PLW",
@@ -3264,7 +3561,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "PSE",
@@ -3282,7 +3581,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Maqluba",
     "description": "Maqluba (also attested by a variety of other spellings in English; Arabic: مَقْلُوبَة, romanized: maqlūba, lit. 'upside-down') is a traditional Levantine dish, a variety of Pilaf that is popular across Palestine, Jordan, Syria, Lebanon, Israel, and Iraq. It consists of meat, rice, and fried vegetables placed in a pot which is flipped upside down when served, hence the name.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Maqluba",
-    "image": "images/dishes/PSE.jpg"
+    "image": "images/dishes/PSE.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "PAN",
@@ -3336,7 +3637,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sancocho",
     "description": "Sancocho (from the Spanish verb sancochar, 'to parboil') is a traditional stew in several Caribbean and Latin American cuisines. Latin variations represent popular national dishes in the Dominican Republic, Colombia, Cuba, Honduras, Mexico, Panama, Puerto Rico, Trinidad and Tobago and Venezuela. It usually consists of large pieces of meat, tubers and vegetables served in a broth.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Sancocho",
-    "image": "images/dishes/PAN.jpg"
+    "image": "images/dishes/PAN.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "PNG",
@@ -3344,7 +3647,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "PRY",
@@ -3362,7 +3667,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sopa_paraguaya",
     "description": "Sopa paraguaya (Spanish for 'Paraguayan soup') is a traditional food in Paraguayan cuisine similar to corn bread, spongy and soft. Corn flour, cheese, onion and milk or whey are common ingredients. It is a cake rich in caloric and protein content.\nSopa is similar to another corn-based Paraguayan typical dish, chipa guasu, except that chipa guasu is made with fresh corn and its consistency is closer to a cheesy soufflé and less like a savory cornbread.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Sopa_paraguaya",
-    "image": "images/dishes/PRY.jpg"
+    "image": "images/dishes/PRY.jpg",
+    "staple": "Maize",
+    "staple_key": "maize"
   },
   {
     "iso3": "PER",
@@ -3399,7 +3706,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ceviche",
     "description": "Ceviche, cebiche, sebiche, or seviche is a traditional cold dish consisting of raw fish or shellfish marinated in citrus and seasonings. Different versions of ceviche are part of the culinary cultures of various Latin American countries along the Pacific Ocean where each iteration is considered native, including Chile, Colombia, Costa Rica, Ecuador, El Salvador, Guatemala, Honduras, Mexico, Puerto Rico, Nicaragua, Panama, and Peru. Most notably, ceviche is considered the national dish of Peru and is recognized by UNESCO as an expression of Peruvian traditional cuisine and an Intangible Cultural Heritage of Humanity.\nUnlike Japanese sashimi, which is served completely unaltered, the seafood in ceviche is marinated in fresh citrus juice—typically lemon or lime. The citric acid denatures the protein molecules in the fish, altering their structure, causing the flesh to turn opaque and firm. While this process mimics the look and texture of heat-cooked fish, the seafood remains structurally raw, as acid marination does not preserve the fish or kill pathogens the way true heat-cooking or curing does. While the fish is typically marinated in lemon or sour lime juice in contemporary preparation, ancient Andean coastal inhabitants used juices from native plants like the banana passionfruit (known locally as tumbo) before the introduction of citrus fruits to the Andean region during 16th century. The dressing also includes some local variety of chili pepper or chili, replaced by mustard in some parts of Central America. The marinade usually also includes sliced or chopped onions and chopped cilantro, though in some regions such as Mexico, tomatoes, avocadoes, and tomato sauce may be included.\nCeviche is often eaten as an appetizer; when eaten as a main dish, it is usually accompanied by starchy side dishes that are designed to balance its acidity, such as sweet potato, lettuce, maize, avocado, or fried plantains, among various other accompaniments.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Ceviche', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/PER.jpg"
+    "image": "images/dishes/PER.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "PHL",
@@ -3432,7 +3741,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Adobo",
     "description": "Adobo or adobar (Spanish for 'marinade, sauce or seasoning') is the immersion of food in a stock (or sauce) composed variously of paprika, oregano, salt, garlic, and vinegar to preserve and enhance its flavor. The Portuguese variant is known as carne de vinha d'alhos. The practice, native to Iberia (Spanish and Portuguese cuisine), was widely adopted in Latin America, as well as Spanish and Portuguese colonies in Africa and Asia.\nIn the Philippines, the name adobo was given by colonial-era Spaniards on the islands to a different indigenous cooking method that also uses vinegar. Although similar, this developed independently of Spanish influence.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Adobo', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/PHL.jpg"
+    "image": "images/dishes/PHL.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "POL",
@@ -3466,7 +3777,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bigos",
     "description": "Bigos (Polish pronunciation: [ˈbʲiɡɔs] ), or hunter's stew, is a Polish stew of chopped meat of various kinds stewed with sauerkraut, shredded fresh cabbage and spices. It is served hot and can be enriched with additional vegetables and wine. Originally from Poland, the dish also became traditional in the areas of the vast Polish–Lithuanian Commonwealth.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Bigos', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/POL.jpg"
+    "image": "images/dishes/POL.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "PRT",
@@ -3518,7 +3831,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bacalhau",
     "description": "Bacalhau (Portuguese: [bɐkɐˈʎaw]) is the Portuguese word for cod and—in a culinary context—dried and salted cod. Fresh (unsalted) cod is referred to as bacalhau fresco (fresh cod).",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Bacalhau",
-    "image": "images/dishes/PRT.jpg"
+    "image": "images/dishes/PRT.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "QAT",
@@ -3536,7 +3851,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kabsa",
     "description": "Kabsa (Arabic: كبسة, romanized: kabsah), also known as Makboos (Gulf Arabic: مكبوس) or Machboos (Gulf Arabic: مچبوس [mətʃˈbuːs]), is an Arab mixed rice dish that originates from Saudi Arabia or Yemen. It is commonly regarded as a national dish in all the countries of the Gulf Cooperation Council. It can also be found in regions such as southern Iran and Gaza in Palestine.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Kabsa",
-    "image": "images/dishes/QAT.jpg"
+    "image": "images/dishes/QAT.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "COG",
@@ -3554,7 +3871,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Moambe_chicken",
     "description": "Moambe chicken (French: poulet à la moambe or simply poulet moambe, Portuguese: moamba de galinha) is a savory chicken dish popular in Central Africa and considered the national dish of Angola, the Republic of the Congo, and the Democratic Republic of the Congo. The dish itself is made by combining chicken, spices and palm butter to create a stew-like consistency. A number of local or regional variations exist across the Congo and Central Africa; the dish is also known outside the continent.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Moambe_chicken",
-    "image": "images/dishes/COG.jpg"
+    "image": "images/dishes/COG.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "ROU",
@@ -3572,7 +3891,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/M%C4%83m%C4%83lig%C4%83",
     "description": "Mămăligă (Romanian pronunciation: [məməˈliɡə] ;) is a dish made out of yellow maize flour, traditional in Romania, Moldova, Hungary (puliszka, mamaliga or málé), and Ukraine (kulesha or mamałyga). On the Balkan Peninsula, the dish is known as kačamak. It is similar to Georgian ghomi (alternatively called mamaliga) and Italian polenta.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/M%C4%83m%C4%83lig%C4%83",
-    "image": "images/dishes/ROU.jpg"
+    "image": "images/dishes/ROU.jpg",
+    "staple": "Maize",
+    "staple_key": "maize"
   },
   {
     "iso3": "RUS",
@@ -3610,7 +3931,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Beef_Stroganoff",
     "description": "Beef Stroganoff, also spelled beef Stroganov, is a Russian dish of sautéed pieces of beef in a sauce of mustard and smetana (heavy sour cream). It is named after one of the members of the Stroganov family. Since its appearance in the 19th century, it has become popular around the world, with considerable variation from the original recipe. Mushrooms are common in many variants.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Beef_Stroganoff', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/RUS.jpg"
+    "image": "images/dishes/RUS.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "RWA",
@@ -3647,7 +3970,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Isombe",
     "description": "Isombe is a vegetable stew dish from Rwanda. It is believed to have originated in the Democratic Republic of the Congo. Vegetables grown in Rwanda are used to prepare isombe, with cassava leaves being the primary ingredient. Peanut butter is usually added to the stew. Other ingredients include tomatoes, onions, coriander, and garlic. Stock from meat bones are also used as an ingredient. The leaves are chopped and boiled with the other ingredients. Peanut butter is added last. It is usually eaten with some type of ugali, rice and beans or bread. Isombe is also eaten in Burundi.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Isombe', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/RWA.jpg"
+    "image": "images/dishes/RWA.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "KNA",
@@ -3655,7 +3980,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "LCA",
@@ -3663,7 +3990,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "VCT",
@@ -3671,7 +4000,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "WSM",
@@ -3679,7 +4010,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "SMR",
@@ -3697,7 +4030,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sammarinese_cuisine",
     "description": "As San Marino is a microstate completely landlocked by Italy, Sammarinese cuisine is very similar to Italian cuisine, especially that of the adjoining Emilia-Romagna and Marche regions. San Marino's primary agricultural products are cheese, wine and livestock, and cheesemaking is a primary economic activity in San Marino.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Sammarinese_cuisine",
-    "image": "images/dishes/SMR.jpg"
+    "image": "images/dishes/SMR.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "STP",
@@ -3705,7 +4040,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "SAU",
@@ -3723,7 +4060,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Saleeg",
     "description": "Saleeg (Arabic: سَلِيق, romanized: Salīg, Hejazi Arabic pronunciation: [saˈliːg]) is a white-rice dish, cooked with broth (chicken or other meat) and milk. It originates in Hejaz region in the west of Saudi Arabia, where it is commonly regarded as a national dish of the region. The dish is very popular in the city of Taif. Saleeg originated in the Hijaz region but is now popular all over the Arab world. Some people say that it tastes like the Italian risotto. It is usually eaten during traditional celebrations such as Shabana. A traditional large plate called tabasi is regularly used for serving Saleeg, and the roasted meat is usually on top of the rice. Saleeg is generally accompanied by a Daggus salad, a spicy tomato sauce, and decorated with ghee.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Saleeg",
-    "image": "images/dishes/SAU.jpg"
+    "image": "images/dishes/SAU.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "SEN",
@@ -3741,7 +4080,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Thieboudienne",
     "description": "Ceeb or tiep (alternatively thieb), also known as benechin (or benachin) or jollof rice, is the national dish of Senegal, also consumed in Mauritania, Guinea-Bissau, Guinea, Mali, The Gambia, and other West and Central African countries. The version of tiep called ceebu jën (Wolof pronunciation: [ˈcɛːbu ˈɟən] ), chebu jen, or Francized as thieboudienne (French: thiéboudiène), is prepared with fish, broken rice and tomato sauce cooked in one pot. There are also tiep yappa (with meat) and tiep ganaar (with chicken) varieties. Additional ingredients often include onions, tomatoes, carrots, cabbage, cassava, hot pepper, lime and peanut oil, and stock cubes.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Thieboudienne",
-    "image": "images/dishes/SEN.jpg"
+    "image": "images/dishes/SEN.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "SRB",
@@ -3759,7 +4100,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/%C4%86evapi",
     "description": "Ćevapi (Serbian Cyrillic: ћевапи, pronounced [tɕeʋǎːpi]) is a grilled dish of minced meat popular in Southeast Europe and countries of former Yugoslavia, where it originated. It is considered a national dish of Bosnia and Herzegovina and Serbia. They are usually served in groups of five to ten pieces on a plate or in a flatbread (lepinja or somun), often with chopped onions, kajmak, ajvar (optional), and salt. Today, the grill shops are known as ćevabdžinica (pl. ćevabdžinice).\nBosnian ćevapi are made from two types of minced beef meat, hand-mixed and formed with a funnel, while Serbian ćevapčići are made of beef, lamb, pork, or a mixture.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/%C4%86evapi",
-    "image": "images/dishes/SRB.jpg"
+    "image": "images/dishes/SRB.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "SYC",
@@ -3767,7 +4110,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "SLE",
@@ -3775,7 +4120,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "SGP",
@@ -3815,7 +4162,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chilli_crab",
     "description": "Chilli crab (Chinese: 辣椒螃蟹; pinyin: làjiāo pángxiè; Malay: ketam cabai, ketam cili) is a Southeast Asian seafood dish popular in Malaysian and Singaporean cuisines. The modern version of the dish originated in the region in the 1950s. It is typically prepared by stir-frying mud crabs in sweet and savoury, semi-thick sauce made primarily from tomatoes and chilli peppers.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Chilli_crab', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/SGP.jpg"
+    "image": "images/dishes/SGP.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "SVK",
@@ -3833,7 +4182,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pierogi",
     "description": "Pierogi (pirr-OH-ghee; Polish: [pjɛˈrɔɡʲi], sing. pieróg [ˈpjɛruk] ) are filled dumplings made by wrapping unleavened dough around a filling and cooking in boiling water. They are occasionally flavored with a savory or sweet garnish. Typical fillings include potato and tvorog cheese, sauerkraut, ground meat, mushrooms, fruits, or berries. Savory pierogi are often served with a topping of sour cream, fried onions, or both.\nDumplings under the name pierogi are a traditional Polish dish, holding considerable culinary significance in Poland. The recipe itself dates back to at least 1682, when Poland's first cookbook, Compendium ferculorum, albo Zebranie potraw, was published. Pierogi are also popular in modern-day Canadian and American cuisines.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Pierogi",
-    "image": "images/dishes/SVK.jpg"
+    "image": "images/dishes/SVK.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "SVN",
@@ -3851,7 +4202,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cremeschnitte",
     "description": "A cremeschnitte (German: Cremeschnitte, Czech: krémeš, Hungarian: krémes, Polish: kremówka, napoleonka, Romanian: cremșnit, cremeș, crempita, Bosnian and Serbian: krempita/кремпита, Croatian: kremšnita, krempita, Slovak: krémeš, Slovene: kremna rezina, kremšnita), also known as vanilla slice or custard slice, is a custard and chantilly cream cream cake dessert commonly associated with the former Austro-Hungarian Monarchy.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Cremeschnitte",
-    "image": "images/dishes/SVN.jpg"
+    "image": "images/dishes/SVN.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "SLB",
@@ -3859,7 +4212,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "SOM",
@@ -3877,7 +4232,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bariis_iskukaris",
     "description": "Bariis iskukaris, also called isku-dheh karis, is a traditional rice dish from Somali cuisine that is customarily cooked in a single pan or where the tenderization of both rice and stew occurs at some point in a single pan. The name isku-dheh karis literally means \"cooked mixed together\"; therefore, it is sometimes used to refer broadly to other grain-derived crops that require similar cooking. The more specific term for this dish is this bariis isku-dheh karis, which means \"rice (bariis) cooked mixed together\".",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Bariis_iskukaris",
-    "image": "images/dishes/SOM.jpg"
+    "image": "images/dishes/SOM.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "ZAF",
@@ -3919,7 +4276,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bobotie",
     "description": "Bobotie (Afrikaans pronunciation: [bəˈbuəti] ) is a South African dish consisting of spiced minced meat baked with an egg-based topping. It is not however a national dish.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Bobotie', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/ZAF.jpg"
+    "image": "images/dishes/ZAF.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "SSD",
@@ -3927,7 +4286,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "ESP",
@@ -3957,7 +4318,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Spanish_omelette",
     "description": "A Spanish omelette or Spanish tortilla (Spanish: tortilla de patatas, tortilla de papas, or tortilla española; see below) is an omelette made with eggs and potatoes, often including onions. It is often served at room temperature as a tapa. It is one of the most popular dishes in Spanish cuisine.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Spanish_omelette', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/ESP.jpg"
+    "image": "images/dishes/ESP.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "LKA",
@@ -3975,7 +4338,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Curry_rice",
     "description": "Curry rice may refer to any rice dish prepared with curry: Rice and curry (Sri Lanka), a popular dish in Sri Lanka\na type of Japanese curry (カレーライス, karē raisu)\nNasi kari, an Indian-Indonesian rice dish\nDal bhat, a lentil and rice dish in South Asia",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Curry_rice",
-    "image": "images/dishes/LKA.jpg"
+    "image": "images/dishes/LKA.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "SDN",
@@ -3983,7 +4348,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "SUR",
@@ -4001,7 +4368,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pom_(dish)",
     "description": "Pom is a Surinamese oven dish made using arrowleaf elephant ear root, locally called \"pomtajer\".",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Pom_(dish)",
-    "image": "images/dishes/SUR.jpg"
+    "image": "images/dishes/SUR.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "SWE",
@@ -4019,7 +4388,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Meatball",
     "description": "A meatball is ground meat (mince) rolled into a large somewhat spherical ball, sometimes along with other ingredients, such as bread crumbs, minced onion, eggs, butter, and seasoning. Meatballs are cooked by frying, baking, steaming, or braising in sauce. There are many types of meatballs made with different meats and spices. The term is sometimes extended to meatless versions based on legumes, vegetables, mushrooms, fish (also commonly known as fish balls) or other seafood.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Meatball",
-    "image": "images/dishes/SWE.jpg"
+    "image": "images/dishes/SWE.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "CHE",
@@ -4060,7 +4431,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fondue",
     "description": "Fondue is a Swiss dish of melted cheese and wine served in a communal pot (caquelon or fondue pot) over a portable stove (réchaud) heated with a candle or spirit lamp, and eaten by dipping bread and sometimes vegetables or other foods into the cheese using long-stemmed forks. As a way to increase cheese consumption, it was promoted as a Swiss national dish by the Swiss Cheese Union (Schweizerische Käseunion) in the 1930s.\nSince the 1950s, the term \"fondue\" has been generalized to other dishes in which a food is dipped into a communal pot of liquid kept hot in a fondue pot.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Fondue', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/CHE.jpg"
+    "image": "images/dishes/CHE.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "SYR",
@@ -4108,7 +4481,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kibbeh",
     "description": "Kibbeh (, also kubba and other spellings; Arabic: كبّة, romanized: kibba; Egyptian Arabic: كبيبة, romanized: kobeba) is a popular dish in the Arab world and the Levant in particular, made of spiced lean ground meat and bulgur wheat. Kibbeh is considered to be a national dish of Lebanon and Syria.\nIn Levantine cuisine, kibbeh is made by pounding bulgur wheat together with meat into a fine paste and forming it into ovoid shapes, with toasted pine nuts and spices. It may also be layered and cooked on a tray, deep-fried, grilled, or served raw. The Syrian city of Aleppo can lay claim to at least 17 types of kibbeh. In Mesopotamian cuisine, versions with rice or farina are found.\nOutside of Lebanon and Syria, versions are found in Cyprus, Egypt, Israel, Palestine, the Persian Gulf, Armenia, and Turkey, and among Assyrian people. It is also found throughout Latin American countries that received substantial numbers of immigrants from the Levant during the late 19th and early 20th centuries, as well as parts of North America.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Kibbeh",
-    "image": "images/dishes/SYR.jpg"
+    "image": "images/dishes/SYR.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "TJK",
@@ -4126,7 +4501,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Uzbek_plov",
     "description": "Uzbek plov, also known as palov or osh, is a traditional Uzbek rice dish made with meat (typically fatty lamb cuts), julienned carrots, onions, garlic, rice, cumin powder and cooked together in oil or fat. It is regarded as the national dish of Uzbekistan and is of significant importance to the country's history, tradition, and culture.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Uzbek_plov",
-    "image": "images/dishes/TJK.jpg"
+    "image": "images/dishes/TJK.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "TZA",
@@ -4171,7 +4548,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chipsi_mayai",
     "description": "Chipsi mayai (Swahili for \"chips and eggs\"), also known as zege, is the most popular street food found all over Tanzania. The dish was invented in the streets of Dar es Salaam. In its most basic form, chipsi mayai is a simple potato-egg omelette. It is available in all regions of Tanzania, from the most remote villages to large towns. Food stands both indoors and on streets make them to order. It is the unofficial national dish of the country. It is generally prepared with chips (French fries), oil and beaten eggs fried together in a pan. It is often served with kachumbari or pili-pili, which can be any type of hot sauce.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Chipsi_mayai', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/TZA.jpg"
+    "image": "images/dishes/TZA.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "THA",
@@ -4214,7 +4593,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pad_thai",
     "description": "Pad thai (or ; Thai: ผัดไทย, RTGS: phat thai, ISO: p̄hạd thịy, pronounced [pʰàt̚ tʰāj] ) is a stir-fried rice noodle dish commonly served as a street food in Thailand as part of Thai cuisine. It is typically made with rice noodles, shrimp, peanuts, green onions, scrambled egg, sugar and bean sprouts. The ingredients are fried in a wok.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Pad_thai', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/THA.jpg"
+    "image": "images/dishes/THA.jpg",
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "GMB",
@@ -4256,7 +4637,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Domoda",
     "description": "Domoda (also known as domoda farine or domodah) is a Senegalese dish. The name ragout comes from the French, a smooth, tomato-based sauce prepared with vinegar and vegetables, to which flour (farine) is added to thicken the sauce. Domoda is one of the emblematic recipes of Senegalese gastronomy. Alongside dishes such as thieboudienne and yassa, it is a favorite in Senegal. It is consumed mainly in Senegal, Mauritania, The Gambia, Guinea-Bissau and Guinea.\nDomoda can be made with meat or fish. It is usually served with white rice. Lemon juice is added to give it its distinctive tangy flavor.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Domoda', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/GMB.jpg"
+    "image": "images/dishes/GMB.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "TLS",
@@ -4264,7 +4647,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "TGO",
@@ -4282,7 +4667,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fufu",
     "description": "Fufu (or fufuo, foofoo, foufou foo-foo ) is a pounded meal found in West African cuisine originally made from boiled cassava, plantains, and cocoyam. Fufu's prevalence in West Africa has been noted in local literature, such as Chinua Achebe's Things Fall Apart.\nFufu is a Twi word originating from the Akans in Ghana. However, the word has been expanded to include several variations of the pounded meal found in other African countries including Sierra Leone, Liberia, Ivory Coast, Burkina Faso, Benin, Togo, Nigeria, Cameroon, the Democratic Republic of Congo, the Central African Republic, the Republic of Congo, Angola and Gabon. It also includes variations in the Greater Antilles and Central America, where African culinary influence is high. In Ghana, Ivory Coast, and Liberia, they use the method of separately mixing and pounding equal portions of boiled cassava with green plantain or cocoyam, or by mixing cassava/plantain/cocoyam flour with water and stirring it on a stove. Its thickness is then adjusted to personal preference, and it is eaten with broth-like soups. Meanwhile, in Nigeria fufu is made solely from fermented cassava, giving it its unique thickness compared to that found elsewhere. It is eaten with a variety of soups (such as Egusi soup and Ogbono soup), vegetables, beef, and fish. In recent years other flours, such as wheat semolina, maize flour, or mashed plantains may take the place of cassava flour. This is common for those in the diaspora or families that live in urban cities. Families in rural areas with access to farmland still maintain the original recipe of using cassava. Fufu is traditionally eaten with the fingers, and a small ball of it can be dipped into an accompanying soup or sauce.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Fufu",
-    "image": "images/dishes/TGO.jpg"
+    "image": "images/dishes/TGO.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "TON",
@@ -4300,7 +4687,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/%27Ota_%27ika",
     "description": "ʻOta ʻika is a Oceanian dish consisting of raw fish marinated in citrus juice and coconut milk. The Tongan, Tahitian, and Samoan variants are essentially identical in that the raw fish is briefly marinated in lemon or lime juice until the surface of the flesh becomes opaque. The fish is then mixed with coconut milk and diced vegetables (most commonly cucumber, tomato, carrots, onion, green onion, and spicy peppers). This is the national dish of Tonga.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/%27Ota_%27ika",
-    "image": "images/dishes/TON.jpg"
+    "image": "images/dishes/TON.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "TTO",
@@ -4318,7 +4707,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Doubles",
     "description": "Men's doubles, Women's doubles or Mixed doubles are sports having two players per side, including; Beach volleyball\nDoubles badminton\nDoubles curling\nFootvolley\nDoubles pickleball\nDoubles squash\nDoubles table tennis\nDoubles tennis\nDoubles may also refer to:",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Doubles",
-    "image": "images/dishes/TTO.jpg"
+    "image": "images/dishes/TTO.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "TUN",
@@ -4336,7 +4727,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Couscous",
     "description": "Couscous is a traditional North African dish of small steamed granules of rolled semolina that is often served with a stew spooned on top. Pearl millet, sorghum, bulgur, and other cereals are often cooked in much the same way in West Africa, and the resulting dishes are also sometimes called couscous.\nCouscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya. It was integrated into French and European cuisine at the beginning of the twentieth century, through the French colonial empire and the Pieds-Noirs of Algeria.\nIn 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Couscous",
-    "image": "images/dishes/TUN.jpg"
+    "image": "images/dishes/TUN.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "TUR",
@@ -4400,7 +4793,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Doner_kebab",
     "description": "Doner kebab or döner kebab is a Turkish dish made of meat cooked on a vertical rotisserie. Seasoned meat stacked in the shape of an inverted cone is turned slowly on the rotisserie, next to a vertical cooking element. The operator uses a knife to slice thin shavings from the outer layer of the meat as it cooks. The vertical rotisserie was invented in the 19th-century Ottoman Empire, and dishes such as the Arab shawarma, Greek gyros, Greek-Canadian donair, and Mexican al pastor are derived from the rotisserie technique of this dish.\nThe modern sandwich variant of doner kebab originated and was popularized in 1970s West Berlin by Turkish immigrants. This was recognised by the Berlin-based Association of Turkish Döner Manufacturers in Europe in 2011.\nThe sliced meat of a doner kebab may be served on a plate with various accompaniments, stuffed into a pita or other type of bread as a sandwich, or wrapped in a thin flatbread such as lavash or filo, known as a dürüm (literally meaning roll or wrap in Turkish). Kadir Nurman in the early 1970s introduced the sandwich or wrap form, which has become popular around the world as a fast food dish sold by kebab shops, and is often called simply a \"kebab\". The sandwich generally contains salad or vegetables, which may include tomato, lettuce, cabbage, onion with sumac, fresh or pickled cucumber or chili, and various types of sauces.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Doner_kebab",
-    "image": "images/dishes/TUR.jpg"
+    "image": "images/dishes/TUR.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "TKM",
@@ -4408,7 +4803,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "TUV",
@@ -4426,7 +4823,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pulaka",
     "description": "Pulaka, Cyrtosperma merkusii, or swamp taro, is a crop grown mainly in Tuvalu and an important source of carbohydrates for the area's inhabitants. It is a \"swamp crop\" similar to taro, but \"with bigger leaves and larger, coarser roots.\" The same plant is known as pulaka in Niue, babai in Kiribati, puraka in Cook Islands, pula’a in Samoa, via, via kana or via kau in Fiji, pulaka in Tokelau, simiden in Chuuk, swam taro in Papua New Guinea, and navia in Vanuatu.\nPulaka roots need to be cooked for hours to reduce toxicity in the corms, but are rich in nutrients, especially calcium. Pulaka is an important part of Tuvalu cultural and culinary tradition, now under threat from rising sea level and displacement from the growing use of imported food products.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Pulaka",
-    "image": "images/dishes/TUV.jpg"
+    "image": "images/dishes/TUV.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "UGA",
@@ -4444,7 +4843,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Matoke",
     "description": "Matoke, locally also known as matooke, amatooke in Buganda (Central Uganda), ekitookye in southwestern Uganda, ekitooke in western Uganda, kamatore in Lugisu (Eastern Uganda), ebitooke in northwestern Tanzania, igitoki in Rwanda, Burundi and by the cultivar name East African Highland banana, are a group of starchy triploid banana cultivars, originating from the African Great Lakes. The fruit is harvested green, carefully peeled, and then cooked and often mashed or pounded into a meal. In Uganda and Rwanda, the fruit is steam-cooked, and the mashed meal is considered a national dish in both countries.\nMatoke bananas are a staple food crop in Uganda, Kenya, Tanzania and other Great Lakes countries. They are also known as the Mutika/Lujugira subgroup.\nThe medium-sized green fruits, which are of a specific group of banana, the East African Highland bananas (Musa AAA-EA), are known in the Bantu languages of Uganda and Western Kenya as matoke.\nCooking bananas have long been and still are a common staple crop around the Lake Victoria area of Kenya and Uganda, and in the West and Kilimanjaro regions of Tanzania.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Matoke",
-    "image": "images/dishes/UGA.jpg"
+    "image": "images/dishes/UGA.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "UKR",
@@ -4484,7 +4885,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Borscht",
     "description": "Borscht (English: ) is a sour soup, made with meat stock, vegetables and seasonings, common in Eastern Europe, Central Europe and Northern Asia. In English, the word borscht, borrowed via Yiddish, is most often associated with the variant of the soup originating in Ukraine, made with red beetroots as one of the main ingredients, which give the dish its distinctive red color. The same name, however, is also used for a wide selection of sour-tasting soups without beetroots, such as sorrel-based green borscht, rye-based white borscht, and cabbage borscht.\nBorscht derives from an ancient soup originally cooked from pickled stems, leaves and umbels of common hogweed (Heracleum sphondylium), an herbaceous plant growing in damp meadows, which lent the dish its Slavic name. With time, it evolved into a diverse array of tart soups, among which the Ukrainian beet-based red borscht has become the most popular. It is typically made by combining meat or bone stock with sautéed vegetables, which—as well as beetroots—usually include cabbage, carrots, onions, potatoes, and tomatoes. Depending on the recipe, borscht may include meat or fish, or be purely vegetarian; it may be served either hot or cold, and it may range from a hearty one-pot meal to a clear broth or a smooth drink. It is often served with smetana or sour cream, hard-boiled eggs or potatoes, but there exists an ample choice of more involved garnishes and side dishes, such as uszka or pampushky, that can be served with the soup.\nIts popularity has spread throughout Eastern Europe and—by way of migration away from the Russian Empire—to other continents. In North America, borscht is often linked with either Jews or Mennonites, the groups who first brought it there from Europe. Several ethnic groups claim borscht, in its various local implementations, as their own national dish consumed as part of ritual meals within Orthodox, Greek Catholic, Roman Catholic, and Jewish religious traditions. In 2022, shortly after Russia's invasion of Ukraine, UNESCO recognized the \"Culture of Ukrainian borscht cooking\" on its List of Intangible Cultural Heritage in Need of Urgent Safeguarding. UNESCO noted that several countries in the broader region have also practiced borscht cooking and their inscription does not imply exclusivity or ownership of the dish for any particular country.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Borscht', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/UKR.jpg"
+    "image": "images/dishes/UKR.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "ARE",
@@ -4502,7 +4905,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Harees",
     "description": "Harees, haresa, hareesa, arizah, harise, jarish, jareesh, (Arabic: هريس), harisa (Armenian: հարիսա), or korkot (Armenian: կորկոտ) is a dish of boiled, cracked, or coarsely-ground cracked wheat or bulgur, mixed with meat, spices, and butter. Its consistency varies between a porridge and a gruel. Harees is known throughout Armenia where it is served on Easter, and the Arab world, where it is commonly eaten in Arab states of the Persian Gulf in the month of Ramadan, and in Iraq, Lebanon and Bahrain during Ashura by Shia Muslims.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Harees",
-    "image": "images/dishes/ARE.jpg"
+    "image": "images/dishes/ARE.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "GBR",
@@ -4520,7 +4925,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Full_breakfast",
     "description": "A full breakfast or fry-up is a substantial cooked breakfast meal often made in Great Britain and Ireland. Depending on the region where it is served a full breakfast, or one of its variants, may also be referred to as a full English, full Scottish, full Welsh, full Irish fry up, or Ulster fry. Other variants of the full breakfast are made elsewhere.\nThe typical ingredients of a full breakfast are bacon, sausages, eggs, black pudding, tomatoes, mushrooms, and fried bread or toast. The meal is often served with tea. Baked beans, hash browns, and coffee (in place of tea) are common contemporary but non-traditional inclusions.\nFried breakfasts became popular in Great Britain and Ireland during the Victorian era; while the term \"full breakfast\" does not appear, a breakfast of \"fried ham and eggs\" is in Isabella Beeton's Book of Household Management (1861).",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Full_breakfast",
-    "image": "images/dishes/GBR.jpg"
+    "image": "images/dishes/GBR.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "USA",
@@ -4579,7 +4986,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Apple_pie",
     "description": "An apple pie is a fruit pie in which the principal filling is apples. It generally has shortcrust pastry both above and below the filling; the upper pastry may be solid or latticed (woven of crosswise strips). The bottom pastry base may be baked separately (known as \"blind-baking\") to prevent it from getting soggy. Tarte Tatin is baked with the pastry on top, but this is served the opposite way round with the fruit exposed.\nFirst recorded in the 14th century in England, apple pie recipes are now a standard part of cuisines in many countries where apples grow. Apple pie is a significant dessert in many countries of Europe, Canada, Australia, New Zealand, and the United States. Due to a greater use of sugar in the recipe, American apple pies may be sweeter than European versions.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Apple_pie",
-    "image": "images/dishes/USA.jpg"
+    "image": "images/dishes/USA.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "URY",
@@ -4615,7 +5024,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chivito_(sandwich)",
     "description": "Chivito is the national dish of Uruguay. It is a sandwich of sliced beefsteak (churrasco), mozzarella, ham, tomatoes, mustard, mayonnaise and black or green olives. A chivito commonly also includes bacon and fried or hard-boiled eggs. It is served in a bun, often accompanied by French-fried potatoes.",
     "description_attribution": "Description from Wikipedia page 'Chivito (sandwich)', licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Chivito_(sandwich)",
-    "image": "images/dishes/URY.jpg"
+    "image": "images/dishes/URY.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "UZB",
@@ -4633,7 +5044,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Uzbek_dishes",
     "description": "This is a list of notable Uzbek dishes and foods. Uzbek cuisine is the cuisine of Uzbekistan. The cuisine is influenced by local agriculture such as grain farming. Breads and noodles are a significant part of the cuisine, and Uzbek cuisine has been characterized as \"noodle-rich\". Mutton is a popular variety of meat due to the abundance of sheep in the country, and it is used in various Uzbek dishes. The ingredients used vary by season. For example, in the winter, dried abdimueed jamas, fruits and vegetables, noodles and preserves are prominent, while in the summer vegetables, fruits (particularly melon) and nuts are more prominent. Bread (nan, obi non) has a prominent role in Uzbek cuisine, and is influenced by pre-Islamic traditions. In Uzbek culture, elders are typically served food first, as a sign of respect towards them.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/List_of_Uzbek_dishes",
-    "image": "images/dishes/UZB.jpg"
+    "image": "images/dishes/UZB.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "VUT",
@@ -4651,7 +5064,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Laplap",
     "description": "Laplap (sometimes incorrectly spelled lap lap) is the national dish of Vanuatu. Laplap is prepared by grating taro, yam or manioc roots, or alternatively breadfruit or bananas, into a vegetable paste that is then cooked. The paste is wrapped in banana leaves and cooked in an underground stone oven, with fresh coconut cream. Meats like pork, beef, chicken or flying fox can be added.\nThe word laplap comes from Bislama, the national language of Vanuatu. It finds its origin in some of the Oceanic languages of the country: e.g. Dorig lablab [laᵐblaᵐb], Nume labalam [laᵐbalam], both reflecting a Proto-Torres-Banks form *laᵐbalaᵐba.\nThe majority of indigenous languages of Vanuatu, however, name the dish using other roots. For example, Mota loko [loko] and Raga loḡo [loᵑɡo] reflect a Proto-North-Central Vanuatu etymon *loᵑgo; Hiw tegōv [təɣoβ], Lemerig ’ëgëv [ʔœɣœβ] and Mwotlap na-tgop [natɣɔp] reflect Proto-Torres-Banks *taɣoβe; Araki has ureeje [uɾeet͡ʃe], Tamambo has wewe, etc.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Laplap",
-    "image": "images/dishes/VUT.jpg"
+    "image": "images/dishes/VUT.jpg",
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "VAT",
@@ -4669,7 +5084,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
     "description": null,
     "description_attribution": null,
-    "image": "images/dishes/VAT.jpg"
+    "image": "images/dishes/VAT.jpg",
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "VEN",
@@ -4700,7 +5117,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pabell%C3%B3n_criollo",
     "description": "Pabellón criollo (Latin American Spanish pronunciation: [paβeˈʝoŋ ˈkɾjoʝo]) is a traditional Venezuelan dish that is considered the national dish. It mixes elements from the three different cultures that intermixed during Spanish colonial times: Native Americans, Spanish and Africans. It is a plate of rice, shredded beef in stew and stewed black beans. In 2019, the Venezuelan government declared pabellón to be intangible heritage.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Pabell%C3%B3n_criollo', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/VEN.jpg"
+    "image": "images/dishes/VEN.jpg",
+    "staple": "Mixed or unclear",
+    "staple_key": "mixed"
   },
   {
     "iso3": "VNM",
@@ -4708,7 +5127,9 @@ window.RECIPE_DATA = [
     "dish": null,
     "status": "no_dish",
     "note": "No single national dish is listed on the Wikipedia National dish page.",
-    "image": null
+    "image": null,
+    "staple": null,
+    "staple_key": null
   },
   {
     "iso3": "YEM",
@@ -4726,7 +5147,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Saltah",
     "description": "Saltah (Arabic: سلتة) is a traditional Yemeni dish. Saltah is considered to be the national dish of Yemen. In the Ottoman Empire, saltah was used as a charitable food and was made with leftover food that was donated by the wealthy or the mosques. It is widely eaten in northern parts of the country. It is mainly served for lunch. The base is a brown meat stew called maraq, a dollop of fenugreek froth, and sahawiq (a mixture of chillies, tomatoes, garlic, and herbs ground into a salsa). Rice, potatoes, scrambled eggs, sambal and vegetables are common additions to saltah. It is eaten traditionally with khubz mulawah, a Yemeni flatbread used as a utensil to scoop up the dish.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Saltah",
-    "image": "images/dishes/YEM.jpg"
+    "image": "images/dishes/YEM.jpg",
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "ZMB",
@@ -4756,7 +5179,9 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ugali",
     "description": "Ugali, also known as posho, nsima, papa, pap, bogobe, sadza, isitshwala, akume, amawe, ewokple, akple, and other names, is a type of corn meal made from maize or corn or mahindi flour in several African countries: Kenya, Uganda, South Sudan, Tanzania, Zimbabwe, Zambia, Lesotho, Eswatini, Angola, Mozambique, Namibia, Democratic Republic of the Congo, Rwanda, Malawi, Botswana and South Africa, and in West Africa by the Ewes of Togo, Ghana, Benin, Nigeria and Ivory Coast. It is cooked in boiling water or milk until it reaches a stiff or firm dough-like consistency. In 2017, the dish was added to the UNESCO Representative List of the Intangible Cultural Heritage of Humanity, one of a few foods on the list.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Ugali', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/ZMB.jpg"
+    "image": "images/dishes/ZMB.jpg",
+    "staple": "Maize",
+    "staple_key": "maize"
   },
   {
     "iso3": "ZWE",
@@ -4789,6 +5214,8 @@ window.RECIPE_DATA = [
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ugali",
     "description": "Ugali, also known as posho, nsima, papa, pap, bogobe, sadza, isitshwala, akume, amawe, ewokple, akple, and other names, is a type of corn meal made from maize or corn or mahindi flour in several African countries: Kenya, Uganda, South Sudan, Tanzania, Zimbabwe, Zambia, Lesotho, Eswatini, Angola, Mozambique, Namibia, Democratic Republic of the Congo, Rwanda, Malawi, Botswana and South Africa, and in West Africa by the Ewes of Togo, Ghana, Benin, Nigeria and Ivory Coast. It is cooked in boiling water or milk until it reaches a stiff or firm dough-like consistency. In 2017, the dish was added to the UNESCO Representative List of the Intangible Cultural Heritage of Humanity, one of a few foods on the list.",
     "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Ugali', licensed under CC BY-SA 4.0.",
-    "image": "images/dishes/ZWE.jpg"
+    "image": "images/dishes/ZWE.jpg",
+    "staple": "Maize",
+    "staple_key": "maize"
   }
 ];

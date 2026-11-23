@@ -1,6 +1,10 @@
 /* National dishes A to Z. No build step. Works from file:// and GitHub Pages. */
 (function () {
   const DATA = window.RECIPE_DATA || [];
+  const stapleMeta = window.STAPLE_META || [];
+  const stapleByKey = {};
+  stapleMeta.forEach(function (m) { stapleByKey[m.key] = m; });
+
   const grid = document.getElementById("grid");
   const search = document.getElementById("search");
   const az = document.getElementById("az");
@@ -11,6 +15,11 @@
 
   const byIso = {};
   DATA.forEach(function (c) { byIso[c.iso3] = c; });
+
+  let stapleFilter = null;
+  let popupIso = null;
+  let hideTimer = null;
+  const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
 
   function letterOf(country) {
     const ch = (country || "").trim().charAt(0).toUpperCase();
@@ -33,13 +42,21 @@
 
   function filterQuery(q) {
     q = (q || "").trim().toLowerCase();
-    if (!q) return DATA;
+    if (!q) return DATA.slice();
     return DATA.filter(function (c) {
       return (
         (c.country || "").toLowerCase().indexOf(q) >= 0 ||
         (c.dish || "").toLowerCase().indexOf(q) >= 0
       );
     });
+  }
+
+  function visibleList() {
+    let list = filterQuery(search ? search.value : "");
+    if (stapleFilter) {
+      list = list.filter(function (c) { return c.staple_key === stapleFilter; });
+    }
+    return list;
   }
 
   function dishImage(c) {
@@ -130,6 +147,9 @@
     body += "</div>";
     body += "<h2>" + escapeHtml(c.country) + "</h2>";
     body += '<p class="dish">' + escapeHtml(gap ? "No single national dish" : c.dish) + "</p>";
+    if (!gap && c.staple) {
+      body += '<p class="source">Built on: ' + escapeHtml(c.staple) + "</p>";
+    }
 
     if (gap) {
       body += '<p class="desc">' + escapeHtml(c.note || "This country has no entry on the Wikipedia National dish list, so no dish is shown.") + "</p>";
@@ -186,20 +206,209 @@
     });
   }
 
+  function colourMap() {
+    document.querySelectorAll("#world-wrap path[data-iso]").forEach(function (p) {
+      if (p.classList.contains("ws") || p.classList.contains("other")) return;
+      const iso = p.getAttribute("data-iso");
+      const c = byIso[iso];
+      const key = c && c.staple_key ? c.staple_key : "none";
+      p.setAttribute("data-staple", key);
+    });
+  }
+
+  function stapleCounts() {
+    const counts = {};
+    DATA.forEach(function (c) {
+      if (c.staple_key) counts[c.staple_key] = (counts[c.staple_key] || 0) + 1;
+    });
+    return counts;
+  }
+
+  function renderLegend() {
+    const el = document.getElementById("staple-legend");
+    if (!el) return;
+    const counts = stapleCounts();
+    el.innerHTML = stapleMeta.map(function (m) {
+      const n = counts[m.key] || 0;
+      const pressed = stapleFilter === m.key ? "true" : "false";
+      return (
+        '<button type="button" data-staple="' + m.key + '" aria-pressed="' + pressed + '">' +
+          '<span class="swatch" style="background:' + m.color + '"></span>' +
+          '<span class="label">' + escapeHtml(m.label) + "</span>" +
+          '<span class="count">' + n + "</span>" +
+        "</button>"
+      );
+    }).join("");
+  }
+
+  function applyFilter() {
+    const wrap = document.getElementById("world-wrap");
+    document.querySelectorAll("#world-wrap path.c").forEach(function (p) {
+      const on = stapleFilter && p.getAttribute("data-staple") === stapleFilter;
+      p.classList.toggle("is-filtered", !!on);
+    });
+    if (wrap) wrap.classList.toggle("filter-on", !!stapleFilter);
+    renderGrid(visibleList());
+    renderLegend();
+    counts();
+  }
+
+  function bindLegend() {
+    const el = document.getElementById("staple-legend");
+    if (!el) return;
+    el.addEventListener("click", function (e) {
+      const btn = e.target.closest("button[data-staple]");
+      if (!btn) return;
+      const key = btn.getAttribute("data-staple");
+      stapleFilter = stapleFilter === key ? null : key;
+      applyFilter();
+    });
+  }
+
+  function popupEl() {
+    const el = document.getElementById("map-popup");
+    if (!el) return null;
+    if (el.parentElement !== document.body) document.body.appendChild(el);
+    return el;
+  }
+
+  function showPopup(iso, x, y) {
+    const c = byIso[iso];
+    if (!c) return;
+    const el = popupEl();
+    if (!el) return;
+    const gap = !c.dish;
+    const dish = gap ? "No single national dish" : c.dish;
+    const stapleLabel = gap ? "No listed dish" : (c.staple || "");
+    const meta = stapleByKey[c.staple_key];
+    const img = dishImage(c);
+    const photo = img
+      ? '<img class="dish-photo" src="' + img + '" alt="">'
+      : '<div class="dish-photo" aria-hidden="true"></div>';
+    const swatch = meta
+      ? '<span class="swatch" style="background:' + meta.color + '"></span>'
+      : "";
+    el.innerHTML =
+      '<button type="button" class="popup-card" data-iso="' + iso + '">' +
+        photo +
+        "<div>" +
+          '<p class="popup-country">' + escapeHtml(c.country) + "</p>" +
+          '<p class="popup-dish">' + escapeHtml(dish) + "</p>" +
+          '<p class="popup-staple">' + swatch + escapeHtml(stapleLabel) + "</p>" +
+        "</div>" +
+      "</button>";
+    el.hidden = false;
+    el.style.visibility = "hidden";
+    placePopup(el, x, y);
+    el.style.visibility = "visible";
+    popupIso = iso;
+    document.querySelectorAll("#world-wrap path.is-hot").forEach(function (p) {
+      p.classList.remove("is-hot");
+    });
+    document.querySelectorAll('#world-wrap path[data-iso="' + iso + '"]').forEach(function (p) {
+      p.classList.add("is-hot");
+    });
+  }
+
+  function placePopup(el, x, y) {
+    el.style.position = "fixed";
+    el.style.left = "0px";
+    el.style.top = "0px";
+    const r = el.getBoundingClientRect();
+    const pad = 8;
+    let left = x + 14;
+    let top = y + 14;
+    if (left + r.width + pad > window.innerWidth) left = x - r.width - 14;
+    if (top + r.height + pad > window.innerHeight) top = y - r.height - 14;
+    left = Math.max(pad, Math.min(left, window.innerWidth - r.width - pad));
+    top = Math.max(pad, Math.min(top, window.innerHeight - r.height - pad));
+    el.style.left = Math.round(left) + "px";
+    el.style.top = Math.round(top) + "px";
+  }
+
+  function hidePopup() {
+    const el = document.getElementById("map-popup");
+    if (el) {
+      el.hidden = true;
+      el.innerHTML = "";
+    }
+    popupIso = null;
+    document.querySelectorAll("#world-wrap path.is-hot").forEach(function (p) {
+      p.classList.remove("is-hot");
+    });
+  }
+
   function bindMap() {
     const wrap = document.getElementById("world-wrap");
+    const pop = popupEl();
     if (!wrap) return;
+    colourMap();
+
+    wrap.addEventListener("pointerover", function (e) {
+      if (!finePointer.matches) return;
+      const path = e.target.closest && e.target.closest("path[data-iso]");
+      if (!path || path.classList.contains("other") || path.classList.contains("ws")) return;
+      const iso = path.getAttribute("data-iso");
+      if (!byIso[iso]) return;
+      clearTimeout(hideTimer);
+      showPopup(iso, e.clientX, e.clientY);
+    });
+
+    wrap.addEventListener("pointerout", function (e) {
+      if (!finePointer.matches) return;
+      const to = e.relatedTarget;
+      if (to && pop && (to === pop || pop.contains(to))) return;
+      if (to && wrap.contains(to) && to.closest && to.closest("path[data-iso]")) return;
+      hideTimer = setTimeout(hidePopup, 200);
+    });
+
+    if (pop) {
+      pop.addEventListener("pointerenter", function () { clearTimeout(hideTimer); });
+      pop.addEventListener("pointerleave", function () {
+        if (finePointer.matches) hideTimer = setTimeout(hidePopup, 150);
+      });
+      pop.addEventListener("click", function (e) {
+        const btn = e.target.closest(".popup-card");
+        if (btn && btn.dataset.iso) {
+          e.preventDefault();
+          e.stopPropagation();
+          const iso = btn.dataset.iso;
+          hidePopup();
+          openCard(iso);
+        }
+      });
+    }
+
     wrap.addEventListener("click", function (e) {
       const path = e.target.closest("path[data-iso]");
       if (!path) return;
       const iso = path.getAttribute("data-iso");
-      if (byIso[iso]) openCard(iso);
+      if (!byIso[iso]) return;
+      if (finePointer.matches) {
+        hidePopup();
+        openCard(iso);
+        return;
+      }
+      if (popupIso === iso) {
+        hidePopup();
+        openCard(iso);
+      } else {
+        showPopup(iso, e.clientX, e.clientY);
+      }
+    });
+
+    document.addEventListener("click", function (e) {
+      const p = document.getElementById("map-popup");
+      if (!p || p.hidden) return;
+      if (p.contains(e.target)) return;
+      if (e.target.closest && e.target.closest("#world-wrap path[data-iso]")) return;
+      hidePopup();
     });
   }
 
   function bindSearch() {
     search.addEventListener("input", function () {
-      renderGrid(filterQuery(search.value));
+      renderGrid(visibleList());
     });
   }
 
@@ -207,7 +416,10 @@
     if (e.target === detail) closeCard();
   });
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && detail.open) closeCard();
+    if (e.key === "Escape") {
+      if (detail.open) closeCard();
+      hidePopup();
+    }
   });
 
   function counts() {
@@ -220,18 +432,29 @@
         else desc += 1;
       } else unresolved += 1;
     });
-    statusLine.textContent =
+    var line =
       DATA.length + " countries in A to Z order. " +
       full + " with a Wikibooks Cookbook recipe. " +
       linked + " with a description and a recipe link. " +
       desc + " with a Wikipedia description only. " +
       none + " with no listed national dish.";
+    if (stapleFilter) {
+      var meta = stapleByKey[stapleFilter];
+      var n = visibleList().filter(function (c) { return true; }).length;
+      // visibleList also applies search; recount filter alone for the status add-on
+      var nClass = 0;
+      DATA.forEach(function (c) { if (c.staple_key === stapleFilter) nClass += 1; });
+      line += " Showing " + nClass + " " + (meta ? meta.label.toLowerCase() : "") + " dishes.";
+    }
+    statusLine.textContent = line;
   }
 
   renderAz();
-  renderGrid(DATA);
+  renderLegend();
+  renderGrid(visibleList());
   bindGrid();
   bindMap();
+  bindLegend();
   bindSearch();
   counts();
 

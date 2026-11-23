@@ -15,7 +15,7 @@ To swap a dish image, replace `images/dishes/{ISO3}.jpg` (uppercase ISO 3166-1 a
 ## What's on a card
 
 - The country's name, its listed national dish, a Natural Earth outline, and a dish illustration when one exists.
-- Click the card, or the country on the header map, to open the recipe or description.
+- Click the card, or open the pop-up on the header map and then the card, to read the recipe or description.
 - If Wikibooks Cookbook has a reusable recipe, the ingredients and method are shown, with a CC BY-SA attribution and a link.
 - If not, a short Wikipedia description is shown, with attribution, plus a link to a recipe page that was checked and was not a 404, or to the Wikipedia article.
 - Countries with no entry on Wikipedia's National dish list appear as grey cards and say "No single national dish". They are not omitted, so the set is the same 195 countries used for coverage.
@@ -32,6 +32,13 @@ Recipes are never invented. Dish images are AI illustrations.
 - 20 cards have no listed national dish and are shown greyed.
 
 Cookbook pages were used only when the recipe clearly matches the listed dish. Close but wrong matches (for example Carbonara standing in for Italy's generic "pasta") were not used.
+
+
+## Header map
+
+Countries are coloured by the base staple of the listed national dish: rice, wheat, maize, roots and tubers, pulses, meat or fish, or mixed or unclear. The 20 countries with no listed dish stay grey and are not a staple class. Tap a colour in the legend to filter the map and the cards. On a computer, hover a country for a pop-up with the dish photo; click to open the card. On a phone, the first tap shows the pop-up and a second tap opens the card.
+
+The staple class for each dish is in `data/staples.csv`, taken from the dish name, Wikipedia description and recipe text already in the data. Where the evidence is missing or points to more than one staple, the class is mixed or unclear.
 
 ## Sources and licences
 
