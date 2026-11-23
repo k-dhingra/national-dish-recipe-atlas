@@ -3,15 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>National dishes, A to Z</title>
+  <title>National dishes</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="description" content="An interactive atlas of national dishes. Open a card for a reusable recipe, or a short description and a link.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <p class="kicker">30 Day Map Challenge, Day 23, Taste</p>
-    <h1>National dishes, A to Z</h1>
+    <h1>National dishes</h1>
     <p class="lead">Open a card for a sourced recipe or a short description. Dishes and recipes are not invented.</p>
     <div id="world-hero">
       <div id="world-wrap">
@@ -260,6 +259,11 @@
 <path d="M570.2,219.3L570.6,219.3L570.4,227.4L560.1,227.4L559.7,239.9L557.9,240.9L556.1,243.1L556.4,250.5L543.9,250.6L543.6,253.2L543.8,250.1L550.9,249.7L551.4,247.9L552.7,245.7L553.9,238.8L555.8,237.4L556.9,234.9L558.7,233.2L560.0,227.5L561.1,226.9L562.3,224.3L562.2,223.1L564.1,222.4L565.7,223.2L567.0,223.2L568.3,222.1L570.2,221.9L570.2,219.3Z" fill="none" stroke="#6B6158" stroke-width="0.9" stroke-dasharray="3 2" class="ws"/>
 </svg>
 
+        <div id="map-zoom" role="group" aria-label="Map zoom">
+          <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+          <button type="button" id="zoom-out" aria-label="Zoom out">−</button>
+          <button type="button" id="zoom-reset" aria-label="Reset map">Reset</button>
+        </div>
         <div id="map-popup" hidden></div>
       </div>
       <div id="staple-legend" role="toolbar" aria-label="Filter by staple"></div>

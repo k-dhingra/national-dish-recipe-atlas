@@ -1,4 +1,4 @@
-/* National dishes A to Z — self-contained, no build, no webfonts. */
+/* National dishes — self-contained, no build, no webfonts. */
 :root {
   --paper: #F6F1E8;
   --card: #FFFDF8;
@@ -72,11 +72,48 @@ h1 {
   max-width: 100%;
   max-height: 56vh;
   aspect-ratio: 1200 / 640;
+  touch-action: none;
+}
+#world-wrap { touch-action: none; }
+#map-zoom {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#map-zoom button {
+  min-width: 48px;
+  min-height: 48px;
+  margin: 0;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 253, 248, 0.95);
+  color: var(--ink);
+  font: 600 1.35rem/1 var(--font-sans);
+  box-shadow: 0 1px 4px rgba(26, 20, 16, 0.12);
+  cursor: pointer;
+}
+#map-zoom button#zoom-reset {
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+}
+#map-zoom button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+#map-zoom button:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
 }
 #world-wrap path.c {
   stroke: #8A939E;
-  stroke-width: 0.45;
+  stroke-width: 0.7px;
   stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
 }
 #world-wrap path.c.other {
   fill: #EEEAE2;
@@ -97,9 +134,16 @@ h1 {
 #world-wrap path.ws {
   fill: none !important;
   stroke: #5E6A74;
-  stroke-width: 0.9;
+  stroke-width: 1px;
   stroke-dasharray: 3 2;
   pointer-events: none;
+  vector-effect: non-scaling-stroke;
+}
+#world-wrap circle.hit {
+  fill: transparent;
+  stroke: none;
+  pointer-events: auto;
+  cursor: pointer;
 }
 #world-wrap,
 #world-wrap svg,
@@ -108,20 +152,23 @@ h1 {
   outline: none !important;
 }
 #world-wrap path.c.has:hover,
-#world-wrap path.c.gap:hover {
+#world-wrap path.c.gap:hover,
+#world-wrap path.c[data-iso]:hover {
   stroke: var(--ink);
-  stroke-width: 1.1;
+  stroke-width: 1.4px;
   filter: none;
+  vector-effect: non-scaling-stroke;
 }
 #world-wrap.has-hot path.c:not(.is-hot) { opacity: 0.45; }
 #world-wrap.has-hot path.ws { opacity: 0.45; }
 #world-wrap path.c.is-hot,
 #world-wrap path.c.is-active {
   stroke: #1A1410;
-  stroke-width: 1.7;
+  stroke-width: 2px;
   filter: none;
   opacity: 1;
   outline: none !important;
+  vector-effect: non-scaling-stroke;
 }
 #world-wrap.filter-on path.c:not(.is-filtered) { opacity: 0.22; }
 #world-wrap.filter-on path.c.is-filtered { opacity: 1; }
