@@ -51,10 +51,14 @@
     });
   }
 
+  function stapleOf(c) {
+    return (c && c.staple_key) ? c.staple_key : "none";
+  }
+
   function visibleList() {
     let list = filterQuery(search ? search.value : "");
     if (stapleFilter) {
-      list = list.filter(function (c) { return c.staple_key === stapleFilter; });
+      list = list.filter(function (c) { return stapleOf(c) === stapleFilter; });
     }
     return list;
   }
@@ -219,7 +223,8 @@
   function stapleCounts() {
     const counts = {};
     DATA.forEach(function (c) {
-      if (c.staple_key) counts[c.staple_key] = (counts[c.staple_key] || 0) + 1;
+      const k = stapleOf(c);
+      counts[k] = (counts[k] || 0) + 1;
     });
     return counts;
   }
@@ -233,7 +238,7 @@
       const pressed = stapleFilter === m.key ? "true" : "false";
       return (
         '<button type="button" data-staple="' + m.key + '" aria-pressed="' + pressed + '">' +
-          '<span class="swatch" style="background:' + m.color + '"></span>' +
+          '<span class="swatch' + (m.hatched ? " hatch" : "") + '" style="background:' + m.color + '"></span>' +
           '<span class="label">' + escapeHtml(m.label) + "</span>" +
           '<span class="count">' + n + "</span>" +
         "</button>"
@@ -272,24 +277,75 @@
     return el;
   }
 
+  const photoCache = {};
+  function whenPhotoReady(src, done) {
+    if (!src) { done(null); return; }
+    if (photoCache[src]) { done(src); return; }
+    const im = new Image();
+    let settled = false;
+    function finish(ok) {
+      if (settled) return;
+      settled = true;
+      if (ok) photoCache[src] = true;
+      done(ok ? src : null);
+    }
+    im.onload = function () { finish(true); };
+    im.onerror = function () { finish(false); };
+    im.src = src;
+    if (im.complete && im.naturalWidth) finish(true);
+    setTimeout(function () {
+      finish(im.complete && im.naturalWidth > 0);
+    }, 2000);
+  }
+
+  function highlightCountry(iso) {
+    const wrap = document.getElementById("world-wrap");
+    const svg = wrap && wrap.querySelector("svg");
+    document.querySelectorAll("#world-wrap path.is-hot").forEach(function (p) {
+      p.classList.remove("is-hot");
+    });
+    document.querySelectorAll('#world-wrap path[data-iso="' + iso + '"]').forEach(function (p) {
+      p.classList.add("is-hot");
+      if (svg) svg.appendChild(p);
+    });
+    if (wrap) wrap.classList.add("has-hot");
+  }
+
+  function clearHighlight() {
+    const wrap = document.getElementById("world-wrap");
+    if (wrap) wrap.classList.remove("has-hot");
+    document.querySelectorAll("#world-wrap path.is-hot").forEach(function (p) {
+      p.classList.remove("is-hot");
+    });
+  }
+
   function showPopup(iso, x, y) {
     const c = byIso[iso];
     if (!c) return;
+    popupIso = iso;
+    highlightCountry(iso);
+    const src = dishImage(c);
+    whenPhotoReady(src, function (readySrc) {
+      if (popupIso !== iso) return;
+      paintPopup(c, readySrc, x, y);
+    });
+  }
+
+  function paintPopup(c, readySrc, x, y) {
     const el = popupEl();
     if (!el) return;
     const gap = !c.dish;
     const dish = gap ? "No single national dish" : c.dish;
     const stapleLabel = gap ? "No listed dish" : (c.staple || "");
-    const meta = stapleByKey[c.staple_key];
-    const img = dishImage(c);
-    const photo = img
-      ? '<img class="dish-photo" src="' + img + '" alt="">'
+    const meta = stapleByKey[c.staple_key] || (gap ? stapleByKey.none : null);
+    const photo = readySrc
+      ? '<img class="dish-photo" src="' + readySrc + '" alt="' + escapeAttr(dish) + '" width="64" height="64" decoding="async" loading="eager">'
       : '<div class="dish-photo" aria-hidden="true"></div>';
     const swatch = meta
-      ? '<span class="swatch" style="background:' + meta.color + '"></span>'
+      ? '<span class="swatch' + (meta.hatched ? " hatch" : "") + '" style="background:' + meta.color + '"></span>'
       : "";
     el.innerHTML =
-      '<button type="button" class="popup-card" data-iso="' + iso + '">' +
+      '<button type="button" class="popup-card" data-iso="' + c.iso3 + '">' +
         photo +
         "<div>" +
           '<p class="popup-country">' + escapeHtml(c.country) + "</p>" +
@@ -298,20 +354,26 @@
         "</div>" +
       "</button>";
     el.hidden = false;
-    el.style.visibility = "hidden";
-    placePopup(el, x, y);
     el.style.visibility = "visible";
-    popupIso = iso;
-    document.querySelectorAll("#world-wrap path.is-hot").forEach(function (p) {
-      p.classList.remove("is-hot");
-    });
-    document.querySelectorAll('#world-wrap path[data-iso="' + iso + '"]').forEach(function (p) {
-      p.classList.add("is-hot");
-    });
+    placePopup(el, x, y);
   }
 
   function placePopup(el, x, y) {
     el.style.position = "fixed";
+    if (!finePointer.matches) {
+      el.classList.add("sheet");
+      el.style.left = "8px";
+      el.style.right = "8px";
+      el.style.bottom = "8px";
+      el.style.top = "auto";
+      el.style.width = "auto";
+      return;
+    }
+    el.classList.remove("sheet");
+    el.style.right = "auto";
+    el.style.bottom = "auto";
+    el.style.width = "";
+    el.style.visibility = "hidden";
     el.style.left = "0px";
     el.style.top = "0px";
     const r = el.getBoundingClientRect();
@@ -324,6 +386,7 @@
     top = Math.max(pad, Math.min(top, window.innerHeight - r.height - pad));
     el.style.left = Math.round(left) + "px";
     el.style.top = Math.round(top) + "px";
+    el.style.visibility = "visible";
   }
 
   function hidePopup() {
@@ -331,11 +394,10 @@
     if (el) {
       el.hidden = true;
       el.innerHTML = "";
+      el.classList.remove("sheet");
     }
     popupIso = null;
-    document.querySelectorAll("#world-wrap path.is-hot").forEach(function (p) {
-      p.classList.remove("is-hot");
-    });
+    clearHighlight();
   }
 
   function bindMap() {
@@ -350,6 +412,7 @@
       if (!path || path.classList.contains("other") || path.classList.contains("ws")) return;
       const iso = path.getAttribute("data-iso");
       if (!byIso[iso]) return;
+      if (path.blur) path.blur();
       clearTimeout(hideTimer);
       showPopup(iso, e.clientX, e.clientY);
     });
@@ -384,6 +447,7 @@
       if (!path) return;
       const iso = path.getAttribute("data-iso");
       if (!byIso[iso]) return;
+      if (path.blur) path.blur();
       if (finePointer.matches) {
         hidePopup();
         openCard(iso);
@@ -423,30 +487,7 @@
   });
 
   function counts() {
-    var full = 0, linked = 0, desc = 0, none = 0, unresolved = 0;
-    DATA.forEach(function (c) {
-      if (!c.dish) none += 1;
-      else if (c.status === "full_recipe") full += 1;
-      else if (c.status === "link_only") {
-        if (c.link_url && c.link_ok) linked += 1;
-        else desc += 1;
-      } else unresolved += 1;
-    });
-    var line =
-      DATA.length + " countries in A to Z order. " +
-      full + " with a Wikibooks Cookbook recipe. " +
-      linked + " with a description and a recipe link. " +
-      desc + " with a Wikipedia description only. " +
-      none + " with no listed national dish.";
-    if (stapleFilter) {
-      var meta = stapleByKey[stapleFilter];
-      var n = visibleList().filter(function (c) { return true; }).length;
-      // visibleList also applies search; recount filter alone for the status add-on
-      var nClass = 0;
-      DATA.forEach(function (c) { if (c.staple_key === stapleFilter) nClass += 1; });
-      line += " Showing " + nClass + " " + (meta ? meta.label.toLowerCase() : "") + " dishes.";
-    }
-    statusLine.textContent = line;
+    if (statusLine) statusLine.textContent = "";
   }
 
   renderAz();
@@ -457,6 +498,11 @@
   bindLegend();
   bindSearch();
   counts();
+  ["BRA","ITA","JPN","USA","SEN","AUS","IND","CHN","MEX","FRA"].forEach(function (iso) {
+    const c = byIso[iso];
+    const src = c && dishImage(c);
+    if (src) whenPhotoReady(src, function () {});
+  });
 
   if (location.hash) {
     const iso = location.hash.replace("#", "").toUpperCase();

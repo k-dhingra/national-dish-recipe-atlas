@@ -2,37 +2,43 @@ window.STAPLE_META = [
   {
     "key": "rice",
     "label": "Rice",
-    "color": "#E8B923"
+    "color": "#E2C56A"
   },
   {
     "key": "wheat",
     "label": "Wheat",
-    "color": "#E05A00"
+    "color": "#D8874A"
   },
   {
     "key": "maize",
     "label": "Maize",
-    "color": "#2A9D4A"
+    "color": "#6FAA5C"
   },
   {
     "key": "roots",
     "label": "Roots and tubers",
-    "color": "#C2368C"
+    "color": "#C07A9E"
   },
   {
     "key": "pulses",
     "label": "Pulses",
-    "color": "#0A7F86"
+    "color": "#3D8E82"
   },
   {
     "key": "meat",
     "label": "Meat or fish led",
-    "color": "#C8102E"
+    "color": "#C45B5E"
   },
   {
     "key": "mixed",
     "label": "Mixed or unclear",
-    "color": "#4F62C4"
+    "color": "#E6DFD4",
+    "hatched": true
+  },
+  {
+    "key": "none",
+    "label": "No listed dish",
+    "color": "#C9C3BA"
   }
 ];
 window.RECIPE_DATA = [
@@ -282,16 +288,17 @@ window.RECIPE_DATA = [
     ],
     "license": "CC BY-SA 4.0",
     "attribution": "Recipe from Wikibooks Cookbook page 'Cookbook:Roast Lamb', licensed under CC BY-SA 4.0.",
-    "source_name": "Wikibooks Cookbook",
-    "source_url": "https://en.wikibooks.org/wiki/Cookbook%3ARoast_Lamb",
+    "source_name": null,
+    "source_url": null,
     "link_url": "https://web.archive.org/web/20100212231744/http://www.ivillage.co.uk/food/tools/recipefinder/display_recipe/0,,4102,00.html",
     "link_ok": true,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sunday_roast",
-    "description": "A Sunday roast or roast dinner is a British dish traditionally eaten on Sunday. It consists of roast meat, roast or mashed potatoes, and accompaniments such as Yorkshire pudding, gravy and stuffing, and may include condiments such as apple sauce, mint sauce, redcurrant sauce, mustard, cranberry sauce or horseradish sauce. A range of vegetables can be served, such as broccoli, Brussels sprouts, cabbage, carrots, cauliflower, parsnips or peas, which can be boiled, steamed or roasted alongside the meat and potatoes. Other names for this meal include Sunday lunch, Sunday dinner, roast dinner and full roast. The meal is often described as a less grand version of a traditional Christmas dinner.\nBesides being served in its original homeland, the tradition of a Sunday roast lunch or dinner has been a major influence on food cultures in the English-speaking world, particularly in Australia, Ireland, Canada, South Africa, and New Zealand. A South African Sunday roast normally comprises roast pork, beef, lamb or chicken, roast potatoes or mashed potato, and various vegetables such as cauliflower cheese, creamed spinach, green beans, carrots, peas, beetroot and sweet potato. It is also fairly common to serve rice and gravy or pap and tomato gravy in South Africa instead of Yorkshire pudding.",
-    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Sunday_roast",
+    "wikipedia_url": null,
+    "description": null,
+    "description_attribution": null,
+    "note": "The listed dish is roast lamb. A dedicated Wikipedia article for that dish was not used; an earlier card text described a Sunday roast in general.",
     "image": "images/dishes/AUS.jpg",
-    "staple": "Mixed or unclear",
-    "staple_key": "mixed"
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "AUT",
@@ -811,15 +818,15 @@ window.RECIPE_DATA = [
     "license": "CC BY-SA 4.0",
     "attribution": null,
     "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/National_dish",
+    "source_url": "https://en.wikipedia.org/wiki/Harees",
     "link_url": null,
     "link_ok": false,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
-    "description": null,
-    "description_attribution": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Harees",
+    "description": "Burundian cuisine lists Boko Boko harees among its typical dishes. Harees is a dish of boiled, cracked, or coarsely-ground cracked wheat or bulgur, mixed with meat, spices and butter. Its consistency varies between a porridge and a gruel.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Harees",
     "image": "images/dishes/BDI.jpg",
-    "staple": "Mixed or unclear",
-    "staple_key": "mixed"
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "KHM",
@@ -1567,12 +1574,12 @@ window.RECIPE_DATA = [
     "license": "CC BY-SA 4.0",
     "attribution": null,
     "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/National_dish",
+    "source_url": "https://en.wikipedia.org/wiki/Zigni",
     "link_url": null,
     "link_ok": false,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
-    "description": null,
-    "description_attribution": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Zigni",
+    "description": "Zigni, also called kaih tsebhi or kai wat, is a popular Eritrean and Ethiopian stew made from meat, tomatoes, red onions and berbere spices. The meat can be beef, lamb, goat or chicken and is usually placed on a plate of injera, a type of unleavened bread made from teff flour.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Zigni",
     "image": "images/dishes/ERI.jpg",
     "staple": "Mixed or unclear",
     "staple_key": "mixed"
@@ -1627,12 +1634,12 @@ window.RECIPE_DATA = [
     "license": "CC BY-SA 4.0",
     "attribution": null,
     "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/Ethiopian_cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/Wat_(food)",
     "link_url": "https://cooking.nytimes.com/recipes/1019079-doro-wat-ethiopian-style-spicy-chicken",
     "link_ok": true,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Ethiopian_cuisine",
-    "description": "Ethiopian cuisine (Amharic: የኢትዮጵያ ምግብ, Ye-Ītyōṗṗyā məgəb) characteristically consists of vegetable and often very spicy meat dishes. This is usually in the form of wat, a thick stew, served on top of injera (እንጀራ), a large sourdough flatbread, which is about 50 centimeters (20 inches) in diameter and made out of fermented teff flour. Ethiopians usually eat with their right hands, using pieces of injera to pick up bites of entrées and side dishes.\nThe Ethiopian Orthodox Tewahedo Church prescribes a number of fasting periods known as tsom (Ge'ez: ጾም, ṣōm), including all Wednesdays and Fridays and the whole Lenten season (including fifteen days outside Lent proper). Per Oriental Orthodox tradition, the faithful may not consume any kind of animal products (including dairy products and eggs) during fasts; therefore, Ethiopian cuisine contains many dishes that are vegan.",
-    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Ethiopian_cuisine",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wat_(food)",
+    "description": "Wat is an Ethiopian and Eritrean stew that may be prepared with chicken, beef, lamb or vegetables and spice mixtures such as berbere. Wat is traditionally eaten with injera, a spongy flat bread made from teff. Doro wat is a spicy stew made of chicken.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Wat_(food)",
     "image": "images/dishes/ETH.jpg",
     "staple": "Mixed or unclear",
     "staple_key": "mixed"
@@ -1867,7 +1874,7 @@ window.RECIPE_DATA = [
     "link_url": "https://www.gov.gd/articles/grenada_oil_down.html",
     "link_ok": true,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Oil_down",
-    "description": "Oil down is a salted meat and vegetable stew that is the national dish of Grenada.\nOil down is popular in local restaurants.",
+    "description": "Oil down is a salted meat and vegetable stew that is the national dish of Grenada. It is a stew of breadfruit, salted meat, chicken, dumplings, callaloo and other vegetables stewed in coconut milk, herbs and spices. The name refers to the coconut oil being absorbed by the ingredients or settling as the liquid cooks down.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Oil_down",
     "image": "images/dishes/GRD.jpg",
     "staple": "Mixed or unclear",
@@ -1985,15 +1992,15 @@ window.RECIPE_DATA = [
     "license": "CC BY-SA 4.0",
     "attribution": null,
     "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/Griot",
+    "source_url": "https://en.wikipedia.org/wiki/Griot_(food)",
     "link_url": null,
     "link_ok": false,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Griot",
-    "description": "A griot (; French: [ɡʁi.o]; Manding: jali or jeli (in N'Ko: ߖߋ߬ߟߌ, djeli or djéli in French spelling); also spelt Djali; Serer: paar or kevel or kewel / okawul; Wolof: gewel) is a West African historian, storyteller, praise singer, poet, and/or musician. Griots are masters of communicating stories and history orally, which is an African tradition. Instead of writing history books, oral historians tell stories of the past that they have memorized. Sometimes there are families of historians, and the oral histories are passed down from one generation to the next. Telling a story out loud allows the speaker to use poetic and musical conventions that entertain an audience. This has contributed to many oral histories surviving for hundreds of years without being written down. Through their storytelling, griots preserve and pass on the values of a tribe or people, such as the Senegalese. The Wolof people in Senegal depend on griots to learn about their culture. The griot is a repository of oral tradition and is often seen as a leader due to their position as an advisor to members of the royal family. As a result of the former of these two functions, they are sometimes called bards. They also act as mediators in disputes.",
-    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Griot",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Griot_(food)",
+    "description": "Griot (Haitian Creole: griyo) is a dish in Haitian cuisine. It consists of pork shoulder marinated in citrus, which is braised and then fried. It is commonly served at parties. Griot along with diri ak pwa wouj (red beans and rice) is considered by some to be Haiti's national dish.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Griot_(food)",
     "image": "images/dishes/HTI.jpg",
-    "staple": "Mixed or unclear",
-    "staple_key": "mixed"
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "HND",
@@ -2301,15 +2308,15 @@ window.RECIPE_DATA = [
     "license": "CC BY-SA 4.0",
     "attribution": null,
     "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/National_dish",
+    "source_url": "https://en.wikipedia.org/wiki/Acheke",
     "link_url": null,
     "link_ok": false,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
-    "description": null,
-    "description_attribution": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Acheke",
+    "description": "Acheke, also spelled attiéké or atcheke, is a dish made from cassava that is popular and traditional in Côte d'Ivoire and Ghana. It is prepared from fermented cassava pulp that has been grated or granulated. Dried acheke is also prepared, which is similar in texture to couscous.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Acheke",
     "image": "images/dishes/CIV.jpg",
-    "staple": "Mixed or unclear",
-    "staple_key": "mixed"
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "JAM",
@@ -2528,15 +2535,15 @@ window.RECIPE_DATA = [
     "license": "CC BY-SA 4.0",
     "attribution": null,
     "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/National_dish",
+    "source_url": "https://en.wikipedia.org/wiki/Kabsa",
     "link_url": null,
     "link_ok": false,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
-    "description": null,
-    "description_attribution": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kabsa",
+    "description": "Kabsa, also known as Makboos or Machboos, is an Arab mixed rice dish that originates from Saudi Arabia or Yemen. It is commonly regarded as a national dish in all the countries of the Gulf Cooperation Council.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Kabsa",
     "image": "images/dishes/KWT.jpg",
-    "staple": "Mixed or unclear",
-    "staple_key": "mixed"
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "KGZ",
@@ -2710,16 +2717,16 @@ window.RECIPE_DATA = [
     ],
     "license": "CC BY-SA 4.0",
     "attribution": "Recipe from Wikibooks Cookbook page 'Cookbook:Dumboy and Pepper Soup', licensed under CC BY-SA 4.0.",
-    "source_name": "Wikibooks Cookbook",
-    "source_url": "https://en.wikibooks.org/wiki/Cookbook%3ADumboy_and_Pepper_Soup",
+    "source_name": "Wikipedia",
+    "source_url": "https://en.wikipedia.org/wiki/Liberian_cuisine",
     "link_url": "https://web.archive.org/web/20110903234346/http://www.celtnet.org.uk/recipes/liberia.php",
     "link_ok": true,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Liberian_cuisine",
-    "description": "Liberian cuisine refers to the cuisine of Liberia. It is centered on rice, cassava, plantain, yam, tropical fruits and vegetables (potatoes, greens, cassava leaf, okra, cabbage), as well as fish and meat. Liberian cuisine is also influenced by African Americans through Americo-Liberians and Caribbean food and recipes.\nLiberia also has a tradition of baking, including cornbread, sour bread, rice bread, banana bread, and cakes.",
+    "description": "In Liberian cuisine, cassava is processed and pounded into starchy foods such as fufu (using dried cassava) and dumboy (using boiled cassava). Fufu can also be made with plantains or taro root.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Liberian_cuisine",
     "image": "images/dishes/LBR.jpg",
-    "staple": "Mixed or unclear",
-    "staple_key": "mixed"
+    "staple": "Roots and tubers",
+    "staple_key": "roots"
   },
   {
     "iso3": "LBY",
@@ -2940,11 +2947,11 @@ window.RECIPE_DATA = [
     "link_url": null,
     "link_ok": false,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Malian_cuisine",
-    "description": "Cuisine in Mali includes rice and millet as staples of Mali, a food culture heavily based on cereal grains. Grains are generally prepared with sauces made from edible leaves, such as spinach, sweet potato or baobab, with tomato peanut sauce. The dishes may be accompanied by pieces of grilled meat (typically chicken, mutton, beef, or goat).\nMalian cuisine varies regionally. Part of West African cuisine, other popular dishes in Mali include fufu, Dibi, Jollof rice, and maafe (peanut butter sauce). The National dish is Tiguadege Na, a creamy peanut stew with various meats like beef, chicken or meatballs.",
+    "description": "Cuisine in Mali includes rice and millet as staples, often prepared with sauces. The national dish is Tiguadege Na, a creamy peanut stew with various meats like beef, chicken or meatballs. Other popular dishes in Mali include fufu, dibi, jollof rice and maafe.",
     "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Malian_cuisine",
     "image": "images/dishes/MLI.jpg",
-    "staple": "Mixed or unclear",
-    "staple_key": "mixed"
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "MLT",
@@ -3029,12 +3036,12 @@ window.RECIPE_DATA = [
     "license": "CC BY-SA 4.0",
     "attribution": null,
     "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/National_dish",
+    "source_url": "https://en.wikipedia.org/wiki/Dal_puri",
     "link_url": null,
     "link_ok": false,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
-    "description": null,
-    "description_attribution": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dal_puri",
+    "description": "Dal puri is a type of flatbread filled with dal, with variants eaten in regions with Indian diasporas. The Mauritian variant, dholl puri, uses white flour, is griddle-baked, and is commonly filled with split peas. Dhalpuri and dholl puri are both wrapped around curry as sandwiches and served as street food.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Dal_puri",
     "image": "images/dishes/MUS.jpg",
     "staple": "Mixed or unclear",
     "staple_key": "mixed"
@@ -3127,15 +3134,15 @@ window.RECIPE_DATA = [
     "license": "CC BY-SA 4.0",
     "attribution": null,
     "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/National_dish",
+    "source_url": "https://en.wikipedia.org/wiki/Barbajuan",
     "link_url": null,
     "link_ok": false,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/National_dish",
-    "description": null,
-    "description_attribution": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Barbajuan",
+    "description": "Barbajuan (also spelled barbagiuan) is an appetizer mainly found on the French Riviera, in Liguria and in Monaco. It is a kind of fritter stuffed with Swiss chard, rice and ricotta, among other ingredients. In Monaco it is especially eaten on the national day, 19 November.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Barbajuan",
     "image": "images/dishes/MCO.jpg",
-    "staple": "Mixed or unclear",
-    "staple_key": "mixed"
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "MNG",
@@ -3297,12 +3304,12 @@ window.RECIPE_DATA = [
     "license": "CC BY-SA 4.0",
     "attribution": null,
     "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/Nepalese_cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/Dhindo",
     "link_url": null,
     "link_ok": false,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Nepalese_cuisine",
-    "description": "Nepali cuisine comprises a variety of cuisines based upon ethnicity, alluvial soil and climate relating to cultural diversity and geography of Nepal and neighboring regions of Sikkim and Gorkhaland. Dal-bhat-tarkari (Nepali: दाल भात तरकारी) is eaten throughout Nepal. Dal is a soup made of lentils and spices, bhat—usually rice but sometimes another grain—and a vegetable curry, tarkari. Condiments are usually small amounts of spicy pickle (achaar, अचार) which can be fresh or fermented, mainly of dried mustard greens (called gundruk ko achar) and radish (mula ko achar) and of which there are many varieties. Other accompaniments may be sliced lemon (nibuwa) or lime (kagati) with fresh green chilli (hariyo khursani) and a fried papad and also Islamic food items such as rice pudding, sewai, and biryani. Dhindo (ढिंडो) is the national dish of Nepal, primarily made from flour of millet and is served with achar of gundruk 'dried spinach'. A typical example of Nepali cuisine is the Chaurasi Byanjan (Nepali: चौरासी व्यञ्जन) set where bhat (rice) is served in a giant leaf platter (patravali) along with 84 different Nepali dishes each served on small plates. It is mostly served during weddings and Pasni (rice feeding ceremony).\nMomo is a Himalayan dumpling, filled with minced meat in a flour dough, given different shapes and then cooked by steaming. It is one of the most popular foods in Nepal and the regions of Sikkim, Darjeeling and Kalimpong in India where Nepali-speaking Indians have a presence. Momo were originally filled with buffalo meat but are now commonly filled with goat or chicken, as well as vegetarian preparations. Special foods such as sel roti, finni roti and patre are eaten during festivals such as Tihar. Sel roti is a traditional Nepali homemade ring-shaped rice bread which is sweet to taste. Other foods have hybrid Tibetan and Indian influence.\nChow mein is a Nepali favorite in modern times based on Chinese-style stir-fried noodles. It is one of the most beloved everyday staple lunches in Nepali households.",
-    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Nepalese_cuisine",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dhindo",
+    "description": "Dhindo is a meal prepared in Nepal by gradually adding flour to boiling water while stirring. It is traditionally prepared from ground buckwheat or millet, but corn meal is common as well. Gundruk is a dish of fermented leafy green vegetables, also originating in Nepal. The two are often eaten together.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Dhindo",
     "image": "images/dishes/NPL.jpg",
     "staple": "Mixed or unclear",
     "staple_key": "mixed"
@@ -3734,16 +3741,16 @@ window.RECIPE_DATA = [
     ],
     "license": "CC BY-SA 4.0",
     "attribution": "Recipe from Wikibooks Cookbook page 'Cookbook:Adobo', licensed under CC BY-SA 4.0.",
-    "source_name": "Wikibooks Cookbook",
-    "source_url": "https://en.wikibooks.org/wiki/Cookbook%3AAdobo",
+    "source_name": "Wikipedia",
+    "source_url": "https://en.wikipedia.org/wiki/Adobo_(Filipino_dish)",
     "link_url": "https://en.wikibooks.org/wiki/Cookbook%3AAdobo",
     "link_ok": true,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Adobo",
-    "description": "Adobo or adobar (Spanish for 'marinade, sauce or seasoning') is the immersion of food in a stock (or sauce) composed variously of paprika, oregano, salt, garlic, and vinegar to preserve and enhance its flavor. The Portuguese variant is known as carne de vinha d'alhos. The practice, native to Iberia (Spanish and Portuguese cuisine), was widely adopted in Latin America, as well as Spanish and Portuguese colonies in Africa and Asia.\nIn the Philippines, the name adobo was given by colonial-era Spaniards on the islands to a different indigenous cooking method that also uses vinegar. Although similar, this developed independently of Spanish influence.",
-    "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Adobo', licensed under CC BY-SA 4.0.",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Adobo_(Filipino_dish)",
+    "description": "Adobo is a popular Filipino dish and cooking process in Philippine cuisine. In its base form, meat, seafood, or vegetables are first browned in oil, and then marinated and simmered in vinegar, salt and/or soy sauce, and garlic. It is often considered the unofficial national dish in the Philippines.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Adobo_(Filipino_dish)",
     "image": "images/dishes/PHL.jpg",
-    "staple": "Mixed or unclear",
-    "staple_key": "mixed"
+    "staple": "Meat or fish led",
+    "staple_key": "meat"
   },
   {
     "iso3": "POL",
@@ -4024,15 +4031,15 @@ window.RECIPE_DATA = [
     "license": "CC BY-SA 4.0",
     "attribution": null,
     "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/Sammarinese_cuisine",
+    "source_url": "https://en.wikipedia.org/wiki/Torta_Tre_Monti",
     "link_url": null,
     "link_ok": false,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sammarinese_cuisine",
-    "description": "As San Marino is a microstate completely landlocked by Italy, Sammarinese cuisine is very similar to Italian cuisine, especially that of the adjoining Emilia-Romagna and Marche regions. San Marino's primary agricultural products are cheese, wine and livestock, and cheesemaking is a primary economic activity in San Marino.",
-    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Sammarinese_cuisine",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Torta_Tre_Monti",
+    "description": "Torta Tre Monti (lit. 'Three Mountains Cake') is a traditional Sammarinese cake made of layers of thin waffled wafers adhered together by chocolate or hazelnut crème. The final product resembles the Three Towers of San Marino.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Torta_Tre_Monti",
     "image": "images/dishes/SMR.jpg",
-    "staple": "Mixed or unclear",
-    "staple_key": "mixed"
+    "staple": "Wheat",
+    "staple_key": "wheat"
   },
   {
     "iso3": "STP",
@@ -4630,13 +4637,13 @@ window.RECIPE_DATA = [
     ],
     "license": "CC BY-SA 4.0",
     "attribution": "Recipe from Wikibooks Cookbook page 'Cookbook:Domoda (Gambian Peanut Stew)', licensed under CC BY-SA 4.0.",
-    "source_name": "Wikibooks Cookbook",
-    "source_url": "https://en.wikibooks.org/wiki/Cookbook%3ADomoda_%28Gambian_Peanut_Stew%29",
+    "source_name": "Wikipedia",
+    "source_url": "https://en.wikipedia.org/wiki/Domoda",
     "link_url": "https://en.wikibooks.org/wiki/Cookbook%3ADomoda_%28Gambian_Peanut_Stew%29",
     "link_ok": true,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Domoda",
-    "description": "Domoda (also known as domoda farine or domodah) is a Senegalese dish. The name ragout comes from the French, a smooth, tomato-based sauce prepared with vinegar and vegetables, to which flour (farine) is added to thicken the sauce. Domoda is one of the emblematic recipes of Senegalese gastronomy. Alongside dishes such as thieboudienne and yassa, it is a favorite in Senegal. It is consumed mainly in Senegal, Mauritania, The Gambia, Guinea-Bissau and Guinea.\nDomoda can be made with meat or fish. It is usually served with white rice. Lemon juice is added to give it its distinctive tangy flavor.",
-    "description_attribution": "Description from Wikipedia page 'https://en.wikipedia.org/wiki/Domoda', licensed under CC BY-SA 4.0.",
+    "description": "Domoda (also known as domoda farine or domodah) is a Senegalese dish, also eaten in The Gambia. It can be made with meat or fish and is usually served with white rice. The name ragout comes from the French, a smooth, tomato-based sauce prepared with vinegar and vegetables, to which flour is sometimes added to thicken the sauce. Lemon juice is added to give it a distinctive tangy flavor.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Domoda",
     "image": "images/dishes/GMB.jpg",
     "staple": "Mixed or unclear",
     "staple_key": "mixed"
@@ -4701,12 +4708,12 @@ window.RECIPE_DATA = [
     "license": "CC BY-SA 4.0",
     "attribution": null,
     "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/Doubles",
+    "source_url": "https://en.wikipedia.org/wiki/Doubles_(food)",
     "link_url": null,
     "link_ok": false,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Doubles",
-    "description": "Men's doubles, Women's doubles or Mixed doubles are sports having two players per side, including; Beach volleyball\nDoubles badminton\nDoubles curling\nFootvolley\nDoubles pickleball\nDoubles squash\nDoubles table tennis\nDoubles tennis\nDoubles may also refer to:",
-    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Doubles",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Doubles_(food)",
+    "description": "Doubles is a common street food originating in Trinidad and Tobago and is of Indo-Trinidadian origin. It consists of curried channa (chickpeas) served on two fried baras. It is normally eaten during breakfast, but is also eaten occasionally during lunch or as a late-night snack.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Doubles_(food)",
     "image": "images/dishes/TTO.jpg",
     "staple": "Mixed or unclear",
     "staple_key": "mixed"
@@ -5038,15 +5045,15 @@ window.RECIPE_DATA = [
     "license": "CC BY-SA 4.0",
     "attribution": null,
     "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/List_of_Uzbek_dishes",
+    "source_url": "https://en.wikipedia.org/wiki/Uzbek_cuisine",
     "link_url": null,
     "link_ok": false,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Uzbek_dishes",
-    "description": "This is a list of notable Uzbek dishes and foods. Uzbek cuisine is the cuisine of Uzbekistan. The cuisine is influenced by local agriculture such as grain farming. Breads and noodles are a significant part of the cuisine, and Uzbek cuisine has been characterized as \"noodle-rich\". Mutton is a popular variety of meat due to the abundance of sheep in the country, and it is used in various Uzbek dishes. The ingredients used vary by season. For example, in the winter, dried abdimueed jamas, fruits and vegetables, noodles and preserves are prominent, while in the summer vegetables, fruits (particularly melon) and nuts are more prominent. Bread (nan, obi non) has a prominent role in Uzbek cuisine, and is influenced by pre-Islamic traditions. In Uzbek culture, elders are typically served food first, as a sign of respect towards them.",
-    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/List_of_Uzbek_dishes",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Uzbek_cuisine",
+    "description": "Uzbekistan's signature dish is plov (or osh or palov, \"pilaf\"), a main course consisting of rice, chunks of meat, grated carrots and onions. It is cooked in a kazan (or deghi) over an open fire. Chickpeas, raisins, barberries, or fruit may be added for variation.",
+    "description_attribution": "Description from Wikipedia, licensed under CC BY-SA 4.0. https://en.wikipedia.org/wiki/Uzbek_cuisine",
     "image": "images/dishes/UZB.jpg",
-    "staple": "Mixed or unclear",
-    "staple_key": "mixed"
+    "staple": "Rice",
+    "staple_key": "rice"
   },
   {
     "iso3": "VUT",
